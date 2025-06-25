@@ -28,8 +28,9 @@ public class PatientController {
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
-//    @PutMapping
-//    public PatientEntity updatePatient(@RequestBody PatientEntity patient) {
-//        return patientService.updatePatient(patient);
-//    }
+    @PutMapping("/{id}")
+    public ResponseEntity<?> updatePatient(@PathVariable Integer id, @RequestBody @Valid PatientDto patientDto) {
+        patientService.updatePatient(id, patientDto);
+        return ResponseEntity.status(HttpStatus.OK).build();
+    }
 }

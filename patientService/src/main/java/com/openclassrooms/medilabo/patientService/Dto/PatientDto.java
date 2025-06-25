@@ -1,9 +1,14 @@
 package com.openclassrooms.medilabo.patientService.Dto;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Past;
 import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+
+import java.time.LocalDate;
 
 @Data
 @AllArgsConstructor
@@ -15,9 +20,10 @@ public class PatientDto {
     @NotBlank(message = "Last name is mandatory")
     private String lastName;
 
-    @NotBlank(message = "Date of birth is mandatory")
-    @Pattern(regexp = "\\d{4}-\\d{2}-\\d{2}", message = "Date of birth must be in the format YYYY-MM-DD")
-    private String dateOfBirth;
+    @NotNull(message = "Date of birth is mandatory")
+    @Past(message = "Date of birth must be in the past")
+    @JsonFormat(pattern = "yyyy-MM-dd")
+    private LocalDate dateOfBirth;
 
     @NotBlank(message = "Gender is mandatory")
     @Pattern(regexp = "F|M", message = "Gender must be either 'F' or 'M'")
