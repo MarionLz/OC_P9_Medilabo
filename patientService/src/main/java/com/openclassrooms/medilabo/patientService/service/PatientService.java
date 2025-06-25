@@ -4,7 +4,6 @@ import com.openclassrooms.medilabo.patientService.Dto.PatientDto;
 import com.openclassrooms.medilabo.patientService.model.PatientEntity;
 import com.openclassrooms.medilabo.patientService.repository.PatientRepository;
 import com.openclassrooms.medilabo.patientService.tools.PatientMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,11 +12,13 @@ import java.util.NoSuchElementException;
 @Service
 public class PatientService {
 
-    @Autowired
     private PatientRepository patientRepository;
-
-    @Autowired
     private PatientMapper patientMapper;
+
+    public PatientService(PatientRepository patientRepository, PatientMapper patientMapper) {
+        this.patientRepository = patientRepository;
+        this.patientMapper = patientMapper;
+    }
 
     public List<PatientDto> getAllPatients() {
         List<PatientEntity> entities = patientRepository.findAll();

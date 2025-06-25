@@ -14,8 +14,11 @@ import java.util.List;
 @RequestMapping("/patients")
 public class PatientController {
 
-    @Autowired
     private PatientService patientService;
+
+    public PatientController(PatientService patientService) {
+        this.patientService = patientService;
+    }
 
     @GetMapping
     public List<PatientDto> getAllPatients() {

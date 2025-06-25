@@ -1,9 +1,6 @@
 package com.openclassrooms.medilabo.patientService.model;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Pattern;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -21,9 +18,7 @@ public class PatientEntity {
 
     private String firstName;
     private String lastName;
-
     private LocalDate dateOfBirth;
-
     private String gender;
     private String phoneNumber;
     private String address;
