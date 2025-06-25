@@ -22,7 +22,6 @@ public class PatientEntity {
     private String firstName;
     private String lastName;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private LocalDate dateOfBirth;
 
     private String gender;
