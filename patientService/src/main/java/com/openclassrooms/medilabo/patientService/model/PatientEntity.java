@@ -1,6 +1,7 @@
 package com.openclassrooms.medilabo.patientService.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -22,4 +23,14 @@ public class PatientEntity {
     private String gender;
     private String phoneNumber;
     private String address;
+
+    public PatientEntity(String firstName, String lastName, LocalDate dateOfBirth, String gender,
+                         String phoneNumber, String address) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dateOfBirth = dateOfBirth;
+        this.gender = gender;
+        this.phoneNumber = phoneNumber;
+        this.address = address;
+    }
 }

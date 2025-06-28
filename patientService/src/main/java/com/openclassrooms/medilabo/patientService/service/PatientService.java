@@ -1,6 +1,7 @@
 package com.openclassrooms.medilabo.patientService.service;
 
 import com.openclassrooms.medilabo.patientService.Dto.PatientDto;
+import com.openclassrooms.medilabo.patientService.exceptions.PatientNotFoundException;
 import com.openclassrooms.medilabo.patientService.model.PatientEntity;
 import com.openclassrooms.medilabo.patientService.repository.PatientRepository;
 import com.openclassrooms.medilabo.patientService.tools.PatientMapper;
@@ -12,8 +13,8 @@ import java.util.NoSuchElementException;
 @Service
 public class PatientService {
 
-    private PatientRepository patientRepository;
-    private PatientMapper patientMapper;
+    private final PatientRepository patientRepository;
+    private final PatientMapper patientMapper;
 
     public PatientService(PatientRepository patientRepository, PatientMapper patientMapper) {
         this.patientRepository = patientRepository;
@@ -32,7 +33,7 @@ public class PatientService {
 
     public void updatePatient(Integer id, PatientDto dto) {
         PatientEntity entity = patientRepository.findById(id)
-                .orElseThrow(() -> new NoSuchElementException("Patient not found with id: " + id));
+                .orElseThrow(() -> new PatientNotFoundException(id));
         patientMapper.updatePatientFromDto(dto, entity);
         patientRepository.save(entity);
     }

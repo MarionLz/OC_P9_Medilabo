@@ -11,9 +11,9 @@ import java.util.NoSuchElementException;
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
-    @ExceptionHandler(NoSuchElementException.class)
-    @ResponseStatus(HttpStatus.BAD_REQUEST)
-    public Map<String, String> handleNoSuchElement(NoSuchElementException ex) {
+    @ExceptionHandler(PatientNotFoundException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public Map<String, String> handlePatientNotFound(PatientNotFoundException ex) {
         return Map.of("error", ex.getMessage());
     }
 }

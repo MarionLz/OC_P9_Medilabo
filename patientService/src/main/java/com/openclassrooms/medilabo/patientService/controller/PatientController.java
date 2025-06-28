@@ -3,7 +3,6 @@ package com.openclassrooms.medilabo.patientService.controller;
 import com.openclassrooms.medilabo.patientService.Dto.PatientDto;
 import com.openclassrooms.medilabo.patientService.service.PatientService;
 import jakarta.validation.Valid;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,7 +13,7 @@ import java.util.List;
 @RequestMapping("/patients")
 public class PatientController {
 
-    private PatientService patientService;
+    private final PatientService patientService;
 
     public PatientController(PatientService patientService) {
         this.patientService = patientService;
