@@ -56,14 +56,8 @@ public class PatientControllerIT {
 
     @Test
     void shouldCreateNewPatient() throws Exception {
-        PatientDto patientDto = new PatientDto();
-        LocalDate dateOfBirth = LocalDate.of(1980, 1, 1);
-        patientDto.setFirstName("John");
-        patientDto.setLastName("Doe");
-        patientDto.setGender("M");
-        patientDto.setDateOfBirth(dateOfBirth);
-        patientDto.setAddress("123 rue de Paris");
-        patientDto.setPhoneNumber("123-456-7890");
+        PatientDto patientDto = new PatientDto("John", "Doe", LocalDate.of(1980, 1, 1),
+                "M", "123-456-7890", "123 rue de Paris");
 
         mockMvc.perform(post("/patients")
                         .contentType(MediaType.APPLICATION_JSON)
@@ -73,14 +67,8 @@ public class PatientControllerIT {
 
     @Test
     void shouldReturnBadRequestWhenCreatingInvalidPatient() throws Exception {
-        PatientDto invalidPatient = new PatientDto();
-        LocalDate dateOfBirth = LocalDate.of(1980, 1, 1);
-        invalidPatient.setFirstName("Marie");
-        invalidPatient.setLastName("Martin");
-        invalidPatient.setGender("F");
-        invalidPatient.setDateOfBirth(dateOfBirth);
-        invalidPatient.setAddress("26 rue des Lilas");
-        invalidPatient.setPhoneNumber("0603246743");
+        PatientDto invalidPatient = new PatientDto("Marie", "Martin", LocalDate.of(1980, 1, 1),
+                "F", "0603246743", "26 rue des Lilas");
 
         mockMvc.perform(post("/patients")
                         .contentType(MediaType.APPLICATION_JSON)
@@ -90,14 +78,8 @@ public class PatientControllerIT {
 
     @Test
     void shouldUpdatePatient() throws Exception {
-        PatientDto updatedPatient = new PatientDto();
-        LocalDate dateOfBirth = LocalDate.of(1990, 2, 2);
-        updatedPatient.setFirstName("Alice");
-        updatedPatient.setLastName("Dupont");
-        updatedPatient.setGender("F");
-        updatedPatient.setDateOfBirth(dateOfBirth);
-        updatedPatient.setAddress("456 rue de Lyon");
-        updatedPatient.setPhoneNumber("777-888-9999");
+        PatientDto updatedPatient = new PatientDto("Alice", "Dupont", LocalDate.of(1990, 2, 2),
+                "F", "777-888-9999", "456 rue de Lyon");
 
         mockMvc.perform(put("/patients/" + aliceId)
                         .contentType(MediaType.APPLICATION_JSON)
@@ -107,13 +89,8 @@ public class PatientControllerIT {
 
     @Test
     void shouldReturnNotFoundWhenUpdatingNonExistentPatient() throws Exception {
-        PatientDto patientDto = new PatientDto();
-        patientDto.setFirstName("Ghost");
-        patientDto.setLastName("Patient");
-        patientDto.setGender("M");
-        patientDto.setDateOfBirth(LocalDate.of(1970, 1, 1));
-        patientDto.setAddress("Nulle part");
-        patientDto.setPhoneNumber("000-000-0000");
+        PatientDto patientDto = new PatientDto("Ghost", "Patient", LocalDate.of(1970, 1, 1),
+                "M", "000-000-0000", "Nulle part");
 
         mockMvc.perform(put("/patients/9999")
                         .contentType(MediaType.APPLICATION_JSON)
