@@ -14,8 +14,3 @@ spring:
             - Path=/api/patients/**   # Les requêtes commençant par /api/patients iront au microservice
           filters:
             - StripPrefix=1           # Enlève le "/api" avant de rediriger
-
-  security:
-    user:
-      name: user
-      password: password
