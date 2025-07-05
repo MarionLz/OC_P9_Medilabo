@@ -45,10 +45,10 @@ function PatientList() {
         <tbody>
           {patients.map(patient => (
             <tr key={patient.id}>
-              <td>{patient.nom}</td>
-              <td>{patient.prenom}</td>
-              <td>{patient.genre}</td>
-              <td>{new Date(patient.dateNaissance).toLocaleDateString()}</td>
+              <td>{patient.lastName}</td>
+              <td>{patient.firstName}</td>
+              <td>{patient.gender}</td>
+              <td>{new Date(patient.dateOfBirth).toLocaleDateString()}</td>
               <td>
                 <button onClick={() => navigate(`/patients/${patient.id}/edit`)} title="Modifier">✏️</button>{' '}
                 <button onClick={() => navigate(`/patients/${patient.id}`)} title="Détails">ℹ️</button>

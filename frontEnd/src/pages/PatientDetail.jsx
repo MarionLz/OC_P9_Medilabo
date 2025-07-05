@@ -33,12 +33,12 @@ function PatientDetail() {
   return (
     <div style={{ maxWidth: 600, margin: 'auto', marginTop: 40 }}>
       <h2>Détails du patient</h2>
-      <p><strong>Nom :</strong> {patient.nom}</p>
-      <p><strong>Prénom :</strong> {patient.prenom}</p>
-      <p><strong>Date de naissance :</strong> {new Date(patient.dateNaissance).toLocaleDateString()}</p>
-      <p><strong>Genre :</strong> {patient.genre}</p>
-      <p><strong>Adresse postale :</strong> {patient.adressePostale || 'Non renseignée'}</p>
-      <p><strong>Téléphone :</strong> {patient.telephone || 'Non renseigné'}</p>
+      <p><strong>Nom :</strong> {patient.lastName}</p>
+      <p><strong>Prénom :</strong> {patient.firstName}</p>
+      <p><strong>Date de naissance :</strong> {new Date(patient.dateOfBirth).toLocaleDateString()}</p>
+      <p><strong>Genre :</strong> {patient.gender}</p>
+      <p><strong>Adresse postale :</strong> {patient.address || 'Non renseignée'}</p>
+      <p><strong>Téléphone :</strong> {patient.phoneNumber || 'Non renseigné'}</p>
 
       <button onClick={() => navigate(`/patients/${id}/edit`)} title="Modifier" style={{ marginTop: 20 }}>
         ✏️ Modifier le dossier
