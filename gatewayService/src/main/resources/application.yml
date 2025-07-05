@@ -1,0 +1,21 @@
+server:
+  port: 8080  # Port de ta gateway
+
+spring:
+  application:
+    name: gateway-service
+
+  cloud:
+    gateway:
+      routes:
+        - id: patient-service
+          uri: http://localhost:8081  # URL de ton microservice patient
+          predicates:
+            - Path=/api/patients/**   # Les requêtes commençant par /api/patients iront au microservice
+          filters:
+            - StripPrefix=1           # Enlève le "/api" avant de rediriger
+
+  security:
+    user:
+      name: user
+      password: password
