@@ -10,12 +10,12 @@ function PatientForm() {
 
   // État du formulaire
   const [patient, setPatient] = useState({
-    nom: '',
-    prenom: '',
-    dateNaissance: '',
-    genre: '',
-    adressePostale: '',
-    telephone: ''
+    firstName: '',
+    lastName: '',
+    dateOfBirth: '',
+    gender: '',
+    address: '',
+    phoneNumber: ''
   });
   const [errors, setErrors] = useState({});
 
@@ -25,15 +25,14 @@ function PatientForm() {
       axios.get(`http://localhost:8080/api/patients/${id}`, {
         auth: { username, password }
       }).then(res => {
-        // format date ISO en yyyy-MM-dd pour input date
         const data = res.data;
         setPatient({
-          nom: data.nom || '',
-          prenom: data.prenom || '',
-          dateNaissance: data.dateNaissance ? data.dateNaissance.slice(0,10) : '',
-          genre: data.genre || '',
-          adressePostale: data.adressePostale || '',
-          telephone: data.telephone || ''
+          firstName: data.firstName || '',
+          lastName: data.lastName || '',
+          dateOfBirth: data.dateOfBirth ? data.dateOfBirth.slice(0,10) : '',
+          gender: data.gender || '',
+          address: data.address || '',
+          phoneNumber: data.phoneNumber || ''
         });
       }).catch(() => {
         alert("Erreur lors du chargement du patient");
@@ -44,12 +43,13 @@ function PatientForm() {
   // Validation simple avant submit
   function validate() {
     const newErrors = {};
-    if (!patient.nom.trim()) newErrors.nom = 'Le nom est obligatoire';
-    if (!patient.prenom.trim()) newErrors.prenom = 'Le prénom est obligatoire';
-    if (!patient.dateNaissance) newErrors.dateNaissance = 'La date de naissance est obligatoire';
-    if (!patient.genre) newErrors.genre = 'Le genre est obligatoire';
+    if (!patient.lastName.trim()) newErrors.lastName = 'Le nom est obligatoire';
+    if (!patient.firstName.trim()) newErrors.firstName = 'Le prénom est obligatoire';
+    if (!patient.dateOfBirth) newErrors.dateOfBirth = 'La date de naissance est obligatoire';
+    if (!patient.gender) newErrors.gender = 'Le genre est obligatoire';
     return newErrors;
   }
+
 
   function handleChange(e) {
     const { name, value } = e.target;
@@ -96,36 +96,36 @@ function PatientForm() {
       <form onSubmit={handleSubmit} noValidate>
         <div>
           <label>Nom* :</label><br />
-          <input type="text" name="nom" value={patient.nom} onChange={handleChange} />
-          {errors.nom && <div style={{ color: 'red' }}>{errors.nom}</div>}
+          <input type="text" name="lastName" value={patient.lastName} onChange={handleChange} />
+          {errors.lastName && <div style={{ color: 'red' }}>{errors.lastName}</div>}
         </div>
         <div>
           <label>Prénom* :</label><br />
-          <input type="text" name="prenom" value={patient.prenom} onChange={handleChange} />
-          {errors.prenom && <div style={{ color: 'red' }}>{errors.prenom}</div>}
+          <input type="text" name="firstName" value={patient.firstName} onChange={handleChange} />
+          {errors.firstName && <div style={{ color: 'red' }}>{errors.firstName}</div>}
         </div>
         <div>
           <label>Date de naissance* :</label><br />
-          <input type="date" name="dateNaissance" value={patient.dateNaissance} onChange={handleChange} />
-          {errors.dateNaissance && <div style={{ color: 'red' }}>{errors.dateNaissance}</div>}
+          <input type="date" name="dateOfBirth" value={patient.dateOfBirth} onChange={handleChange} />
+          {errors.dateOfBirth && <div style={{ color: 'red' }}>{errors.dateOfBirth}</div>}
         </div>
         <div>
           <label>Genre* :</label><br />
-          <select name="genre" value={patient.genre} onChange={handleChange}>
+          <select name="gender" value={patient.gender} onChange={handleChange}>
             <option value="">-- Choisir --</option>
             <option value="M">Masculin</option>
             <option value="F">Féminin</option>
             <option value="Autre">Autre</option>
           </select>
-          {errors.genre && <div style={{ color: 'red' }}>{errors.genre}</div>}
+          {errors.gender && <div style={{ color: 'red' }}>{errors.gender}</div>}
         </div>
         <div>
           <label>Adresse postale :</label><br />
-          <input type="text" name="adressePostale" value={patient.adressePostale} onChange={handleChange} />
+          <input type="text" name="address" value={patient.address} onChange={handleChange} />
         </div>
         <div>
           <label>Téléphone :</label><br />
-          <input type="tel" name="telephone" value={patient.telephone} onChange={handleChange} />
+          <input type="tel" name="phoneNumber" value={patient.phoneNumber} onChange={handleChange} />
         </div>
         <button type="submit" style={{ marginTop: 20 }}>
           {id ? 'Mettre à jour' : 'Ajouter'}

@@ -16,6 +16,8 @@ import java.time.LocalDate;
 @NoArgsConstructor
 public class PatientDto {
 
+    private Integer id;
+
     @NotBlank(message = "First name is mandatory")
     private String firstName;
 
