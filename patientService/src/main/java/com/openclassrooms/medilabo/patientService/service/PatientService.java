@@ -26,6 +26,12 @@ public class PatientService {
         return patientMapper.patientListToDtoList(entities);
     }
 
+    public PatientDto getPatientById(Integer id) {
+        PatientEntity patient = patientRepository.findById(id)
+                .orElseThrow(() -> new PatientNotFoundException(id));
+        return patientMapper.patientToPatientDto(patient);
+    }
+
     public void createPatient(PatientDto dto) {
         PatientEntity entity = patientMapper.patientDtoToPatient(dto);
         patientRepository.save(entity);

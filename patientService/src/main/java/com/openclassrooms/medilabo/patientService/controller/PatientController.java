@@ -24,6 +24,12 @@ public class PatientController {
         return patientService.getAllPatients();
     }
 
+    @GetMapping("/{id}")
+    public ResponseEntity<PatientDto> getPatientById(@PathVariable Integer id) {
+        PatientDto dto = patientService.getPatientById(id);
+        return ResponseEntity.ok(dto);
+    }
+
     @PostMapping
     public ResponseEntity<?> createPatient(@RequestBody @Valid PatientDto patientDto) {
         patientService.createPatient(patientDto);
