@@ -55,6 +55,21 @@ public class PatientControllerIT {
     }
 
     @Test
+    void shouldReturnPatientWithGivenId() throws Exception {
+        mockMvc.perform(get("/patients/"+ aliceId))
+                .andExpect(status().isOk())
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
+                .andExpect(jsonPath("$.firstName").value("Alice"));
+    }
+
+    @Test
+    void shouldReturnNotFoundExceptionWithUnknownId() throws Exception {
+        mockMvc.perform(get("/patients/"+ 9999))
+                .andExpect(status().isNotFound())
+                .andExpect(jsonPath("$.error").value("Patient not found with id: 9999"));
+    }
+
+    @Test
     void shouldCreateNewPatient() throws Exception {
         PatientDto patientDto = new PatientDto("John", "Doe", LocalDate.of(1980, 1, 1),
                 "M", "123-456-7890", "123 rue de Paris");
