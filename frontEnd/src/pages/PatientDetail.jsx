@@ -7,20 +7,48 @@ function PatientDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
   const { username, password } = useAuth();
+
   const [patient, setPatient] = useState(null);
   const [error, setError] = useState('');
 
+  const [notes, setNotes] = useState([]);
+  const [newNote, setNewNote] = useState('');
+  const [notesError, setNotesError] = useState('');
+
+  // Charger les infos du patient
   useEffect(() => {
     axios.get(`http://localhost:8080/api/patients/${id}`, {
       auth: { username, password }
     })
-    .then(res => {
-      setPatient(res.data);
+    .then(res => setPatient(res.data))
+    .catch(() => setError("Erreur lors du chargement du patient"));
+  }, [id, username, password]);
+
+  // Charger les notes du patient
+  useEffect(() => {
+    axios.get(`http://localhost:8080/api/notes/patient/${id}`, {
+      auth: { username, password }
+    })
+    .then(res => setNotes(res.data))
+    .catch(() => setNotesError("Aucune note trouvée pour ce patient."));
+  }, [id, username, password]);
+
+  // Ajouter une nouvelle note
+  const handleAddNote = () => {
+    if (!newNote.trim()) return;
+
+    axios.post(`http://localhost:8080/api/notes/patient/${id}`, newNote, {
+      headers: { 'Content-Type': 'text/plain' },
+      auth: { username, password }
+    })
+    .then(() => {
+      setNotes(prev => [...prev, newNote]);
+      setNewNote('');
     })
     .catch(() => {
-      setError("Erreur lors du chargement du patient");
+      alert("Erreur lors de l'ajout de la note.");
     });
-  }, [id, username, password]);
+  };
 
   if (error) {
     return <div style={{ color: 'red', textAlign: 'center', marginTop: 40 }}>{error}</div>;
@@ -40,12 +68,41 @@ function PatientDetail() {
       <p><strong>Adresse postale :</strong> {patient.address || 'Non renseignée'}</p>
       <p><strong>Téléphone :</strong> {patient.phoneNumber || 'Non renseigné'}</p>
 
-      <button onClick={() => navigate(`/patients/${id}/edit`)} title="Modifier" style={{ marginTop: 20 }}>
-        ✏️ Modifier le dossier
-      </button>{' '}
-      <button onClick={() => navigate('/patients')} style={{ marginTop: 20 }}>
-        Retour à la liste
-      </button>
+      <h3 style={{ marginTop: 30 }}>📝 Notes</h3>
+      {notesError ? (
+        <p style={{ color: 'gray' }}>{notesError}</p>
+      ) : (
+        <details open style={{ marginBottom: 10 }}>
+          <summary>Voir les notes ({notes.length})</summary>
+          <ul>
+            {notes.map((note, index) => (
+              <li key={index} style={{ marginBottom: 5 }}>{note}</li>
+            ))}
+          </ul>
+        </details>
+      )}
+
+      <div style={{ marginTop: 20 }}>
+        <textarea
+          rows={3}
+          value={newNote}
+          onChange={(e) => setNewNote(e.target.value)}
+          placeholder="Ajouter une nouvelle note..."
+          style={{ width: '100%', padding: 8 }}
+        />
+        <button onClick={handleAddNote} style={{ marginTop: 10 }}>
+          ➕ Ajouter la note
+        </button>
+      </div>
+
+      <div style={{ marginTop: 30 }}>
+        <button onClick={() => navigate(`/patients/${id}/edit`)}>
+          ✏️ Modifier le dossier
+        </button>{' '}
+        <button onClick={() => navigate('/patients')}>
+          Retour à la liste
+        </button>
+      </div>
     </div>
   );
 }
