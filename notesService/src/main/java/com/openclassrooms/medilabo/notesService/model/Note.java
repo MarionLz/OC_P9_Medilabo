@@ -15,7 +15,7 @@ import java.util.List;
 public class Note {
 
     @Id
-    private Integer id;
+    private String id;
 
     private Integer patientId;
     private String patient;

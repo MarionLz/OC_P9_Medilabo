@@ -9,5 +9,5 @@ import java.util.Optional;
 @Repository
 public interface NoteRepository extends MongoRepository<Note, Integer> {
 
-    Optional<Note> findByPatientId(Integer patId);
+    Optional<Note> findByPatientId(Integer patientId);
 }

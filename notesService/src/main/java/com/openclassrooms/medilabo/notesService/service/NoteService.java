@@ -21,8 +21,8 @@ public class NoteService {
         return note.map(Note::getNotes);
     }
 
-    public boolean addNoteToPatient(Integer patId, String newNote) {
-        Optional<Note> optionalNote = noteRepository.findByPatientId(patId);
+    public boolean addNoteToPatient(Integer patientId, String newNote) {
+        Optional<Note> optionalNote = noteRepository.findByPatientId(patientId);
         if (optionalNote.isPresent()) {
             Note existingNote = optionalNote.get();
             existingNote.getNotes().add(newNote);
