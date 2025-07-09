@@ -1,13 +1,13 @@
 [
   {
-    "patId": 1,
+    "patientId": 1,
     "patient": "TestNone",
     "notes": [
       "Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé"
     ]
   },
   {
-    "patId": 2,
+    "patientId": 2,
     "patient": "TestBorderline",
     "notes": [
       "Le patient déclare qu'il ressent beaucoup de stress au travail Il se plaint également que son audition est anormale dernièrement",
@@ -15,7 +15,7 @@
     ]
   },
   {
-    "patId": 3,
+    "patientId": 3,
     "patient": "TestInDanger",
     "notes": [
       "Le patient déclare qu'il fume depuis peu",
@@ -23,7 +23,7 @@
     ]
   },
   {
-    "patId": 4,
+    "patientId": 4,
     "patient": "TestEarlyOnset",
     "notes": [
       "Le patient déclare qu'il lui est devenu difficile de monter les escaliers Il se plaint également d’être essoufflé Tests de laboratoire indiquant que les anticorps sont élevés Réaction aux médicaments",
