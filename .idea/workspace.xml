@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51ef69f2-837f-43bc-8453-529048f2839a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/notesService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notesService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/pages/PatientDetail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/pages/PatientDetail.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,10 +24,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2zdMgnkObc3fhxZVqCR0QgyU5lj" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -37,7 +38,7 @@
     "Application.NotesServiceApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/notesService",
+    "git-widget-placeholder": "feature/front__end",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Workspace/intellij",
     "project.structure.last.edited": "Project",
