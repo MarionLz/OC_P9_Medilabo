@@ -42,6 +42,7 @@
     "Application.NotesServiceApplication.executor": "Run",
     "Application.PatientServiceApplication.executor": "Run",
     "JUnit.NoteControllerIT.testAddNoteToPatient_shouldAddNote.executor": "Run",
+    "JUnit.NoteControllerIT.testGetNotesByPatientId_shouldReturnNotFoundWhenNoNotes.executor": "Run",
     "JUnit.NoteControllerIT.testGetNotesByPatientId_shouldReturnNotes.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
