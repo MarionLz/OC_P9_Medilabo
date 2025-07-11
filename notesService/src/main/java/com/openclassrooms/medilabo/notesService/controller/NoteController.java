@@ -1,8 +1,10 @@
 package com.openclassrooms.medilabo.notesService.controller;
 
+import com.openclassrooms.medilabo.notesService.Dto.NoteRequest;
 import com.openclassrooms.medilabo.notesService.service.NoteService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -35,16 +37,10 @@ public class NoteController {
     }
 
     @PostMapping("/patient/{patientId}")
-    public ResponseEntity<?> addNoteToPatient(@PathVariable Integer patientId, @RequestBody String newNote) {
+    public ResponseEntity<?> addNoteToPatient(@PathVariable Integer patientId, @RequestBody NoteRequest noteRequest) {
         log.info("Received request to add note to patient with ID {}", patientId);
-        boolean added = noteService.addNoteToPatient(patientId, newNote);
-        if (added) {
-            log.info("Note added successfully to patient ID {}", patientId);
-            return ResponseEntity.ok("Note added successfully");
-        } else {
-            log.warn("Failed to add note: patient with ID {} not found", patientId);
-            return ResponseEntity.notFound().build();
-        }
+        boolean added = noteService.addNoteToPatient(patientId, noteRequest.getNote(), noteRequest.getPatient());
+        return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
 }

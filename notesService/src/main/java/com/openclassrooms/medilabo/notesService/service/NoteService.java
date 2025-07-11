@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class NoteService {
@@ -20,24 +21,27 @@ public class NoteService {
         this.noteRepository = noteRepository;
     }
 
-    public Optional<List<String>> getNotesByPatientId(Integer patId) {
-        log.info("Fetching notes for patient ID {}", patId);
-        Optional<Note> note = noteRepository.findByPatientId(patId);
-        return note.map(Note::getNotes);
+    public Optional<List<String>> getNotesByPatientId(Integer patientId) {
+        log.info("Fetching notes for patient ID {}", patientId);
+        List<Note> notes = noteRepository.findAllByPatientId(patientId);
+        if (notes.isEmpty()) {
+            return Optional.empty();
+        }
+        List<String> noteContents = notes.stream()
+                .map(Note::getNote)
+                .collect(Collectors.toList());
+        return Optional.of(noteContents);
     }
 
-    public boolean addNoteToPatient(Integer patientId, String newNote) {
+    public boolean addNoteToPatient(Integer patientId, String newNote, String patientName) {
         log.info("Attempting to add new note to patient ID {}", patientId);
         log.debug("Note content to add: {}", newNote);
-        Optional<Note> optionalNote = noteRepository.findByPatientId(patientId);
-        if (optionalNote.isPresent()) {
-            Note existingNote = optionalNote.get();
-            existingNote.getNotes().add(newNote);
-            noteRepository.save(existingNote);
-            log.info("Note added successfully for patient ID {}", patientId);
-            return true;
-        } else {
-            return false;
-        }
+        Note newNoteDocument = new Note();
+        newNoteDocument.setPatientId(patientId);
+        newNoteDocument.setNote(newNote);
+        newNoteDocument.setPatient(patientName);
+        noteRepository.save(newNoteDocument);
+        log.info("Note added successfully for patient ID {}", patientId);
+        return true;
     }
 }

@@ -19,6 +19,6 @@ public class Note {
 
     private Integer patientId;
     private String patient;
-    private List<String> notes;
+    private String note;
 
 }
