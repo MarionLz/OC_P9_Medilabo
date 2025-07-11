@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51ef69f2-837f-43bc-8453-529048f2839a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notesService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notesService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patientService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/patientService/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,26 +37,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.GatewayServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.NotesServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PatientServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.NoteControllerIT.testAddNoteToPatient_shouldAddNote.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.NoteControllerIT.testGetNotesByPatientId_shouldReturnNotFoundWhenNoNotes.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.NoteControllerIT.testGetNotesByPatientId_shouldReturnNotes.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/notesService&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Workspace/intellij&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.GatewayServiceApplication.executor": "Run",
+    "Application.NotesServiceApplication.executor": "Run",
+    "Application.PatientServiceApplication.executor": "Run",
+    "JUnit.NoteControllerIT.testAddNoteToPatient_shouldAddNote.executor": "Run",
+    "JUnit.NoteControllerIT.testGetNotesByPatientId_shouldReturnNotFoundWhenNoNotes.executor": "Run",
+    "JUnit.NoteControllerIT.testGetNotesByPatientId_shouldReturnNotes.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "feature/patientService",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Workspace/intellij",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
-}</component>
-  <component name="RunManager" selected="Application.NotesServiceApplication">
+}]]></component>
+  <component name="RunManager" selected="Application.PatientServiceApplication">
     <configuration name="NotesServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <envs>
         <env name="LOG_DIR" value="notesService/logs" />
@@ -168,11 +169,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PatientServiceApplication" />
         <item itemvalue="Application.NotesServiceApplication" />
         <item itemvalue="JUnit.NoteControllerIT.testGetNotesByPatientId_shouldReturnNotFoundWhenNoNotes" />
         <item itemvalue="JUnit.NoteControllerIT.testAddNoteToPatient_shouldAddNote" />
         <item itemvalue="JUnit.NoteControllerIT.testGetNotesByPatientId_shouldReturnNotes" />
-        <item itemvalue="Application.PatientServiceApplication" />
       </list>
     </recent_temporary>
   </component>
