@@ -35,13 +35,18 @@ public class NoteService {
 
     public boolean addNoteToPatient(Integer patientId, String newNote, String patientName) {
         log.info("Attempting to add new note to patient ID {}", patientId);
-        log.debug("Note content to add: {}", newNote);
-        Note newNoteDocument = new Note();
-        newNoteDocument.setPatientId(patientId);
-        newNoteDocument.setNote(newNote);
-        newNoteDocument.setPatient(patientName);
-        noteRepository.save(newNoteDocument);
-        log.info("Note added successfully for patient ID {}", patientId);
-        return true;
+        try {
+            Note newNoteDocument = new Note();
+            newNoteDocument.setPatientId(patientId);
+            newNoteDocument.setNote(newNote);
+            newNoteDocument.setPatient(patientName);
+            noteRepository.save(newNoteDocument);
+            log.info("Note added successfully for patient ID {}", patientId);
+            return true;
+        } catch (Exception e) {
+            log.error("Failed to add note for patient ID {}: {}", patientId, e.getMessage());
+            return false;
+        }
     }
+
 }
