@@ -10,3 +10,14 @@
 2025-07-11 11:33:17 [http-nio-8082-exec-2] DEBUG com.openclassrooms.medilabo.notesService.service.NoteService - Note content to add: Le patient ne mange pas assez de protéines.
 2025-07-11 11:33:17 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note added successfully for patient ID 1
 2025-07-11 11:33:17 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Note added successfully to patient ID 1
+2025-07-11 12:16:57 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Starting NotesServiceApplication using Java 21.0.5 with PID 28204 (C:\Workspace\OC_P9_Medilabo\notesService\target\classes started by Cy in C:\Workspace\OC_P9_Medilabo)
+2025-07-11 12:16:57 [main] DEBUG com.openclassrooms.medilabo.notesService.NotesServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-11 12:16:57 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-11 12:17:02 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Started NotesServiceApplication in 6.268 seconds (process running for 7.935)
+2025-07-11 12:17:45 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-11 12:17:45 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-11 12:17:46 [http-nio-8082-exec-1] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Found 1 notes for patient ID 1
+2025-07-11 12:17:54 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to add note to patient with ID 1
+2025-07-11 12:17:54 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Attempting to add new note to patient ID 1
+2025-07-11 12:17:54 [http-nio-8082-exec-2] DEBUG com.openclassrooms.medilabo.notesService.service.NoteService - Note content to add: null
+2025-07-11 12:17:54 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note added successfully for patient ID 1

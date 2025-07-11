@@ -37,8 +37,13 @@ function PatientDetail() {
   const handleAddNote = () => {
     if (!newNote.trim()) return;
 
-    axios.post(`http://localhost:8080/api/notes/patient/${id}`, newNote, {
-      headers: { 'Content-Type': 'text/plain' },
+    const data = {
+      patient: patient.lastName,  // ou patient.firstName + ' ' + patient.lastName si tu veux
+      notes: newNote
+    };
+
+    axios.post(`http://localhost:8080/api/notes/patient/${id}`, data, {
+      headers: { 'Content-Type': 'application/json' },
       auth: { username, password }
     })
     .then(() => {
