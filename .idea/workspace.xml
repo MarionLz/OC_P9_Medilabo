@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51ef69f2-837f-43bc-8453-529048f2839a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatewayService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayService/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/app-debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/app-debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patientService/src/main/resources/log4j2-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/patientService/src/main/resources/log4j2-spring.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,22 +34,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.GatewayServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.NotesServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PatientServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/gateway&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Workspace/intellij&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.GatewayServiceApplication.executor": "Run",
+    "Application.NotesServiceApplication.executor": "Run",
+    "Application.PatientServiceApplication.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "feature/patientService",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Workspace/intellij",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.PatientServiceApplication">
     <configuration name="GatewayServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.openclassrooms.medilabo.gatewayService.GatewayServiceApplication" />
@@ -102,9 +99,10 @@
     </configuration>
     <configuration name="PatientServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <envs>
+        <env name="DB_PASSWORD" value="rootroot" />
         <env name="DB_URL" value="jdbc:mysql://localhost:3306/patientService?useSSL=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true" />
         <env name="DB_USERNAME" value="root" />
-        <env name="DB_PASSWORD" value="rootroot" />
+        <env name="LOG_DIR" value="patientService/logs" />
       </envs>
       <option name="MAIN_CLASS_NAME" value="com.openclassrooms.medilabo.patientService.PatientServiceApplication" />
       <module name="patientService" />
@@ -136,8 +134,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.PatientServiceApplication" />
-        <item itemvalue="Application.NotesServiceApplication" />
         <item itemvalue="Application.GatewayServiceApplication" />
+        <item itemvalue="Application.NotesServiceApplication" />
       </list>
     </recent_temporary>
   </component>

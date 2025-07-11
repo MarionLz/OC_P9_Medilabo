@@ -8,7 +8,7 @@
         </Console>
 
         <!-- File for DEBUG logs and above -->
-        <File name="FileDebug" fileName="logs/app-debug.log" append="true">
+        <File name="FileDebug" fileName="${env:LOG_DIR}/app-debug.log" append="true">
             <PatternLayout>
                 <Pattern>%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n</Pattern>
             </PatternLayout>
