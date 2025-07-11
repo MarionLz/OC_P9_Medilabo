@@ -40,7 +40,11 @@ public class NoteController {
     public ResponseEntity<?> addNoteToPatient(@PathVariable Integer patientId, @RequestBody NoteRequest noteRequest) {
         log.info("Received request to add note to patient with ID {}", patientId);
         boolean added = noteService.addNoteToPatient(patientId, noteRequest.getNote(), noteRequest.getPatient());
-        return ResponseEntity.status(HttpStatus.CREATED).build();
+        if (added) {
+            return ResponseEntity.status(HttpStatus.CREATED).body("Note ajoutée avec succès.");
+        } else {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Erreur lors de l'ajout de la note.");
+        }
     }
 
 }
