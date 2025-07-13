@@ -5,12 +5,15 @@ import com.openclassrooms.medilabo.diabetesReportService.enums.RiskLevel;
 import com.openclassrooms.medilabo.diabetesReportService.enums.TriggerTerm;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.List;
+import java.util.Set;
+import java.util.HashSet;
 
 @Service
 public class DiabetesReportService {
@@ -38,8 +41,7 @@ public class DiabetesReportService {
         List<String> notes = webClient.get()
                 .uri("/api/notes/patient/{id}", patientId)
                 .retrieve()
-                .bodyToFlux(String.class)
-                .collectList()
+                .bodyToMono(new ParameterizedTypeReference<List<String>>() {})
                 .block();
         if (notes == null || notes.isEmpty()) {
             log.warn("No notes found for patient ID {}", patientId);
@@ -75,15 +77,16 @@ public class DiabetesReportService {
         int count = 0;
         for (String note : notes) {
             String content = note.toLowerCase();
+            Set<TriggerTerm> foundInNote = new HashSet<>();
 
             for (TriggerTerm trigger : TriggerTerm.values()) {
                 String keyword = trigger.getTerm();
-                int index = content.indexOf(keyword);
-                while (index != -1) {
-                    count++;
-                    index = content.indexOf(keyword, index + keyword.length());
+                if (content.contains(keyword)) {
+                    log.debug("Found trigger term '{}'", keyword);
+                    foundInNote.add(trigger);
                 }
             }
+            count += foundInNote.size();
         }
         return count;
     }
@@ -106,13 +109,12 @@ public class DiabetesReportService {
     }
 
     private RiskLevel riskForUnder30(int triggerCount, String gender) {
-        String normalizedGender = gender.toLowerCase();
-        switch (normalizedGender) {
-            case "male":
+        switch (gender) {
+            case "M":
                 if (triggerCount == 2) return RiskLevel.BORDERLINE;
                 if (triggerCount <= 4) return RiskLevel.IN_DANGER;
                 return RiskLevel.EARLY_ONSET;
-            case "female":
+            case "F":
                 if (triggerCount <= 3) return RiskLevel.BORDERLINE;
                 if (triggerCount <= 6) return RiskLevel.IN_DANGER;
                 return RiskLevel.EARLY_ONSET;

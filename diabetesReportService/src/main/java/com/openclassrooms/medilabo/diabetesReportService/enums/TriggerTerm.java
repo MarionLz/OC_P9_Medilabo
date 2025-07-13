@@ -8,8 +8,6 @@ public enum TriggerTerm {
     FUMEUR("fumeur"),
     FUMEUSE("fumeuse"),
     ANORMAL("anormal"),
-    ANORMALE("anormale"),
-    ANORMALES("anormales"),
     CHOLESTEROL("cholestérol"),
     VERTIGES("vertiges"),
     RECHUTE("rechute"),
