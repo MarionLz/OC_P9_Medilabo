@@ -29,8 +29,16 @@ function PatientDetail() {
     axios.get(`http://localhost:8080/api/notes/patient/${id}`, {
       auth: { username, password }
     })
-    .then(res => setNotes(res.data))
-    .catch(() => setNotesError("Aucune note trouvée pour ce patient."));
+    .then(res => {
+      const receivedNotes = res.data;
+      setNotes(receivedNotes);
+      if (receivedNotes.length === 0) {
+        setNotesError("Aucune note trouvée pour ce patient.");
+      }
+    })
+    .catch(() => {
+      setNotesError("Erreur lors de la récupération des notes.");
+    });
   }, [id, username, password]);
 
   // Ajouter une nouvelle note

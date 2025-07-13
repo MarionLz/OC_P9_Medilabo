@@ -8,8 +8,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Collections;
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/notes")
@@ -26,14 +26,11 @@ public class NoteController {
     @GetMapping("/patient/{patientId}")
     public ResponseEntity<?> getNotesByPatientId(@PathVariable Integer patientId) {
         log.info("Received request to get all notes for patient with ID {}", patientId);
-        Optional<List<String>> notes = noteService.getNotesByPatientId(patientId);
-        if (notes.isPresent()) {
-            log.debug("Found {} notes for patient ID {}", notes.get().size(), patientId);
-            return ResponseEntity.ok(notes.get());
-        } else {
-            log.debug("No notes found for patient ID {}", patientId);
-            return ResponseEntity.notFound().build();
-        }
+        List<String> notes = noteService.getNotesByPatientId(patientId)
+                .orElse(Collections.emptyList());
+
+        log.debug("Returning {} notes for patient ID {}", notes.size(), patientId);
+        return ResponseEntity.ok(notes);
     }
 
     @PostMapping("/patient/{patientId}")
