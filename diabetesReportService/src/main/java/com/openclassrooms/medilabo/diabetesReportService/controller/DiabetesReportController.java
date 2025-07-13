@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/diabetesReport")
+@RequestMapping("/diabetes-report")
 public class DiabetesReportController {
 
     private static final Logger log = LogManager.getLogger(DiabetesReportController.class);
