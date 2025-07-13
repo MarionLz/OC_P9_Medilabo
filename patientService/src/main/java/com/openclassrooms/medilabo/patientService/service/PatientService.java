@@ -1,5 +1,6 @@
 package com.openclassrooms.medilabo.patientService.service;
 
+import com.openclassrooms.medilabo.patientService.Dto.PatientDemographicsDto;
 import com.openclassrooms.medilabo.patientService.Dto.PatientDto;
 import com.openclassrooms.medilabo.patientService.exceptions.PatientNotFoundException;
 import com.openclassrooms.medilabo.patientService.model.PatientEntity;
@@ -53,5 +54,12 @@ public class PatientService {
         patientMapper.updatePatientFromDto(dto, entity);
         patientRepository.save(entity);
         log.info("Patient with ID {} updated successfully", id);
+    }
+
+    public PatientDemographicsDto getDemographicsInfoByPatientId(Integer id) {
+        log.info("Fetching demographics info for patient with ID {}", id);
+        PatientEntity patient = patientRepository.findById(id)
+                .orElseThrow(() -> new PatientNotFoundException(id));
+        return patientMapper.patientToPatientDemographicsDto(patient);
     }
 }

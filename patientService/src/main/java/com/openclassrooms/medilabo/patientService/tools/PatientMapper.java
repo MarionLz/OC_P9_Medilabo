@@ -1,5 +1,6 @@
 package com.openclassrooms.medilabo.patientService.tools;
 
+import com.openclassrooms.medilabo.patientService.Dto.PatientDemographicsDto;
 import com.openclassrooms.medilabo.patientService.Dto.PatientDto;
 import com.openclassrooms.medilabo.patientService.model.PatientEntity;
 import org.mapstruct.InheritInverseConfiguration;
@@ -28,4 +29,6 @@ public interface PatientMapper {
 
     // Liste de DTOs → Liste d'entités
     List<PatientEntity> dtoListToPatientList(List<PatientDto> dtos);
+
+    PatientDemographicsDto patientToPatientDemographicsDto(PatientEntity entity);
 }

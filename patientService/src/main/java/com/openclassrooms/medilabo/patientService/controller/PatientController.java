@@ -1,6 +1,7 @@
 package com.openclassrooms.medilabo.patientService.controller;
 
 import com.openclassrooms.medilabo.patientService.Dto.PatientDto;
+import com.openclassrooms.medilabo.patientService.Dto.PatientDemographicsDto;
 import com.openclassrooms.medilabo.patientService.service.PatientService;
 import jakarta.validation.Valid;
 import org.apache.logging.log4j.LogManager;
@@ -53,5 +54,13 @@ public class PatientController {
         patientService.updatePatient(id, patientDto);
         log.info("Patient with ID {} updated successfully", id);
         return ResponseEntity.status(HttpStatus.OK).build();
+    }
+
+    @GetMapping("/{id}/demographics")
+    public ResponseEntity<PatientDemographicsDto> getDemographicsInfoByPatientId(@PathVariable Integer id) {
+        log.info("Received request to get demographics info with ID {}", id);
+        PatientDemographicsDto dto = patientService.getDemographicsInfoByPatientId(id);
+        log.debug("Returning patient demographics info: {}", dto);
+        return ResponseEntity.ok(dto);
     }
 }

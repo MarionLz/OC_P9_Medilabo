@@ -25,7 +25,7 @@ public class DiabetesReportService {
 
         // 1. Récupérer les infos du patient
         PatientDto patient = webClient.get()
-                .uri("/patients/{id}", patientId)
+                .uri("/patients/{id}/demographics", patientId)
                 .retrieve()
                 .bodyToMono(PatientDto.class)
                 .block(); // bloquant ici volontairement pour simplifier
