@@ -40,7 +40,11 @@ public class DiabetesReportService {
                 .retrieve()
                 .bodyToFlux(String.class)
                 .collectList()
-                .block(); // idem
+                .block();
+        if (notes == null || notes.isEmpty()) {
+            log.warn("No notes found for patient ID {}", patientId);
+            return RiskLevel.NONE.name();
+        }
         log.debug("Retrieved {} note(s) for patient ID {}", notes.size(), patientId);
 
         int age = calculateAge(patient.getDateOfBirth());
