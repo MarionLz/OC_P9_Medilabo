@@ -24,7 +24,7 @@ public class DiabetesReportController {
     @GetMapping("/patient/{patientId}")
     public ResponseEntity<String> getDiabetesReport(@PathVariable Integer patientId) {
         log.info("Received request to get diabetes report");
-        String report = diabetesReportService.generateReport();
+        String report = diabetesReportService.generateReport(patientId);
         log.debug("Generated diabetes report: {}", report);
         return ResponseEntity.ok(report);
     }
