@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="51ef69f2-837f-43bc-8453-529048f2839a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diabetesReportService/src/main/java/com/openclassrooms/medilabo/diabetesReportService/service/DiabetesReportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/diabetesReportService/src/main/java/com/openclassrooms/medilabo/diabetesReportService/service/DiabetesReportService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patientService/src/main/java/com/openclassrooms/medilabo/patientService/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/patientService/src/main/java/com/openclassrooms/medilabo/patientService/controller/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patientService/src/main/java/com/openclassrooms/medilabo/patientService/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/patientService/src/main/java/com/openclassrooms/medilabo/patientService/service/PatientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patientService/src/main/java/com/openclassrooms/medilabo/patientService/tools/PatientMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/patientService/src/main/java/com/openclassrooms/medilabo/patientService/tools/PatientMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/pages/PatientDetail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/pages/PatientDetail.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notesService/src/main/java/com/openclassrooms/medilabo/notesService/controller/NoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/notesService/src/main/java/com/openclassrooms/medilabo/notesService/controller/NoteController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
