@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51ef69f2-837f-43bc-8453-529048f2839a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diabetesReportService/logs/app-debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/diabetesReportService/logs/app-debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diabetesReportService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/diabetesReportService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diabetesReportService/src/main/java/com/openclassrooms/medilabo/diabetesReportService/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/diabetesReportService/src/main/java/com/openclassrooms/medilabo/diabetesReportService/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diabetesReportService/src/main/java/com/openclassrooms/medilabo/diabetesReportService/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/diabetesReportService/src/main/java/com/openclassrooms/medilabo/diabetesReportService/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diabetesReportService/src/main/java/com/openclassrooms/medilabo/diabetesReportService/service/DiabetesReportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/diabetesReportService/src/main/java/com/openclassrooms/medilabo/diabetesReportService/service/DiabetesReportService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diabetesReportService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/diabetesReportService/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +60,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RunManager" selected="Application.DiabetesReportServiceApplication">
@@ -79,6 +85,19 @@
         <ENTRIES>
           <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
         </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.medilabo.gatewayService.GatewayServiceApplication" />
+      <module name="gatewayService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.openclassrooms.medilabo.gatewayService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,22 +158,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NoteControllerIT.testAddNoteToPatient_shouldAddNote" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="notesService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.openclassrooms.medilabo.notesService.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.openclassrooms.medilabo.notesService.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.medilabo.notesService.controller.NoteControllerIT" />
-      <option name="METHOD_NAME" value="testAddNoteToPatient_shouldAddNote" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="NoteControllerIT.testGetNotesByPatientId_shouldReturnNotFoundWhenNoNotes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="notesService" />
       <extension name="coverage">
@@ -172,10 +175,10 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.GatewayServiceApplication" />
       <item itemvalue="Application.DiabetesReportServiceApplication" />
       <item itemvalue="Application.NotesServiceApplication" />
       <item itemvalue="Application.PatientServiceApplication" />
-      <item itemvalue="JUnit.NoteControllerIT.testAddNoteToPatient_shouldAddNote" />
       <item itemvalue="JUnit.NoteControllerIT.testGetNotesByPatientId_shouldReturnNotFoundWhenNoNotes" />
     </list>
     <recent_temporary>
@@ -183,8 +186,8 @@
         <item itemvalue="Application.DiabetesReportServiceApplication" />
         <item itemvalue="Application.PatientServiceApplication" />
         <item itemvalue="Application.NotesServiceApplication" />
+        <item itemvalue="Application.GatewayServiceApplication" />
         <item itemvalue="JUnit.NoteControllerIT.testGetNotesByPatientId_shouldReturnNotFoundWhenNoNotes" />
-        <item itemvalue="JUnit.NoteControllerIT.testAddNoteToPatient_shouldAddNote" />
       </list>
     </recent_temporary>
   </component>

@@ -28,7 +28,7 @@ public class DiabetesReportService {
 
         // 1. Récupérer les infos du patient
         PatientDto patient = webClient.get()
-                .uri("/patients/{id}/demographics", patientId)
+                .uri("/api/patients/{id}/demographics", patientId)
                 .retrieve()
                 .bodyToMono(PatientDto.class)
                 .block(); // bloquant ici volontairement pour simplifier
@@ -36,7 +36,7 @@ public class DiabetesReportService {
 
         // 2. Récupérer les notes du patient
         List<String> notes = webClient.get()
-                .uri("/notes/patient/{id}", patientId)
+                .uri("/api/notes/patient/{id}", patientId)
                 .retrieve()
                 .bodyToFlux(String.class)
                 .collectList()

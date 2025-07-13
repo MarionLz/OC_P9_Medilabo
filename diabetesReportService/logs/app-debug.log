@@ -12,3 +12,21 @@
 2025-07-13 12:17:04 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.DiabetesReportServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
 2025-07-13 12:17:04 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.DiabetesReportServiceApplication - No active profile set, falling back to 1 default profile: "default"
 2025-07-13 12:17:09 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.DiabetesReportServiceApplication - Started DiabetesReportServiceApplication in 6.888 seconds (process running for 8.106)
+2025-07-13 18:45:07 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.DiabetesReportServiceApplication - Starting DiabetesReportServiceApplication using Java 21.0.5 with PID 28352 (C:\Workspace\OC_P9_Medilabo\diabetesReportService\target\classes started by Cy in C:\Workspace\OC_P9_Medilabo)
+2025-07-13 18:45:07 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.DiabetesReportServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-13 18:45:07 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.DiabetesReportServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-13 18:45:13 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.DiabetesReportServiceApplication - Started DiabetesReportServiceApplication in 7.329 seconds (process running for 9.598)
+2025-07-13 18:45:56 [http-nio-8083-exec-3] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Received request to get diabetes report
+2025-07-13 18:45:56 [http-nio-8083-exec-3] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Generating diabetes risk report for patient ID 1
+2025-07-13 18:47:38 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.DiabetesReportServiceApplication - Starting DiabetesReportServiceApplication using Java 21.0.5 with PID 15832 (C:\Workspace\OC_P9_Medilabo\diabetesReportService\target\classes started by Cy in C:\Workspace\OC_P9_Medilabo)
+2025-07-13 18:47:38 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.DiabetesReportServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-13 18:47:38 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.DiabetesReportServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-13 18:47:42 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.DiabetesReportServiceApplication - Started DiabetesReportServiceApplication in 4.507 seconds (process running for 5.772)
+2025-07-13 18:47:54 [http-nio-8083-exec-1] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Received request to get diabetes report
+2025-07-13 18:47:54 [http-nio-8083-exec-1] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Generating diabetes risk report for patient ID 1
+2025-07-13 18:51:33 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.DiabetesReportServiceApplication - Starting DiabetesReportServiceApplication using Java 21.0.5 with PID 22800 (C:\Workspace\OC_P9_Medilabo\diabetesReportService\target\classes started by Cy in C:\Workspace\OC_P9_Medilabo)
+2025-07-13 18:51:33 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.DiabetesReportServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-13 18:51:33 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.DiabetesReportServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-13 18:51:37 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.DiabetesReportServiceApplication - Started DiabetesReportServiceApplication in 5.854 seconds (process running for 7.088)
+2025-07-13 18:51:55 [http-nio-8083-exec-1] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Received request to get diabetes report
+2025-07-13 18:51:55 [http-nio-8083-exec-1] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Generating diabetes risk report for patient ID 1
