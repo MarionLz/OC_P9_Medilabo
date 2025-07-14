@@ -76,7 +76,7 @@ function PatientDetail() {
 
     const data = {
       patient: patient.lastName,  // ou patient.firstName + ' ' + patient.lastName si tu veux
-      notes: newNote
+      note: newNote
     };
 
     axios.post(`http://localhost:8080/api/notes/patient/${id}`, data, {

@@ -42,6 +42,7 @@ public class NoteService {
             newNoteDocument.setPatient(patientName);
             noteRepository.save(newNoteDocument);
             log.info("Note added successfully for patient ID {}", patientId);
+            log.debug("Content of the note: {}", newNoteDocument.getNote());
             return true;
         } catch (Exception e) {
             log.error("Failed to add note for patient ID {}: {}", patientId, e.getMessage());
