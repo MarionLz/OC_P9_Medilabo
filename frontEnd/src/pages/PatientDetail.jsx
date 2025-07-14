@@ -15,6 +15,10 @@ function PatientDetail() {
   const [newNote, setNewNote] = useState('');
   const [notesError, setNotesError] = useState('');
 
+  const [riskLevel, setRiskLevel] = useState('');
+  const [riskLoading, setRiskLoading] = useState(false);
+  const [riskError, setRiskError] = useState('');
+
   // Charger les infos du patient
   useEffect(() => {
     axios.get(`http://localhost:8080/api/patients/${id}`, {
@@ -40,6 +44,31 @@ function PatientDetail() {
       setNotesError("Erreur lors de la récupération des notes.");
     });
   }, [id, username, password]);
+
+    // Charger le niveau de risque
+    const fetchRiskLevel = () => {
+      setRiskLoading(true);
+      setRiskError('');
+      axios.get(`http://localhost:8080/api/diabetes-report/patient/${id}`, {
+        auth: { username, password }
+      })
+      .then(res => {
+        // Supposons que la réponse contienne un champ "riskLevel"
+        setRiskLevel(res.data || 'NON DEFINI');
+        setRiskLoading(false);
+      })
+      .catch(() => {
+        setRiskError("Impossible de récupérer le niveau de risque.");
+        setRiskLoading(false);
+      });
+    };
+
+    // Charger le risque au chargement du patient (ou de l’id)
+    useEffect(() => {
+      if (id) {
+        fetchRiskLevel();
+      }
+    }, [id, username, password]);
 
   // Ajouter une nouvelle note
   const handleAddNote = () => {
@@ -105,6 +134,26 @@ function PatientDetail() {
         />
         <button onClick={handleAddNote} style={{ marginTop: 10 }}>
           ➕ Ajouter la note
+        </button>
+      </div>
+
+
+      <div style={{ display: 'flex', alignItems: 'center', marginTop: 20, gap: 10 }}>
+        <div style={{
+            border: '1px solid #ccc',
+            padding: 10,
+            borderRadius: 4,
+            minWidth: 150,
+            textAlign: 'center',
+            backgroundColor: riskLevel === 'IN_DANGER' ? '#f8d7da' : '#d1e7dd',
+            color: riskLevel === 'IN_DANGER' ? '#842029' : '#0f5132',
+            fontWeight: 'bold',
+        }}>
+            {riskLoading ? 'Chargement...' : `Risque: ${riskLevel}`}
+            {riskError && <div style={{ color: 'red', fontSize: 12 }}>{riskError}</div>}
+        </div>
+        <button onClick={fetchRiskLevel} disabled={riskLoading}>
+            🔄 Recalculer le risque
         </button>
       </div>
 

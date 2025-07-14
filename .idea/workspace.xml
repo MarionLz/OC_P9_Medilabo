@@ -8,7 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diabetesReportService/logs/app-debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/diabetesReportService/logs/app-debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diabetesReportService/src/test/java/com/openclassrooms/medilabo/diabetesReportService/controller/DiabetesReportControllerIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/diabetesReportService/src/test/java/com/openclassrooms/medilabo/diabetesReportService/controller/DiabetesReportControllerIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notesService/logs/app-debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/notesService/logs/app-debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/pages/PatientDetail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/pages/PatientDetail.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patientService/logs/app-debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/patientService/logs/app-debug.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +56,7 @@
     "JUnit.NoteControllerIT.testGetNotesByPatientId_shouldReturnNotes.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/diabetesReportService",
+    "git-widget-placeholder": "feature/front__end",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Workspace/intellij",
     "project.structure.last.edited": "Project",
@@ -65,7 +65,111 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.DiabetesReportControllerIT">
+  <component name="RunManager" selected="Application.DiabetesReportServiceApplication">
+    <configuration name="DiabetesReportServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="LOG_DIR" value="diabetesReportService/logs" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.medilabo.diabetesReportService.DiabetesReportServiceApplication" />
+      <module name="diabetesReportService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.openclassrooms.medilabo.diabetesReportService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.medilabo.gatewayService.GatewayServiceApplication" />
+      <module name="gatewayService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.openclassrooms.medilabo.gatewayService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotesServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="LOG_DIR" value="notesService/logs" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.medilabo.notesService.NotesServiceApplication" />
+      <module name="notesService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.openclassrooms.medilabo.notesService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PatientServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="LOG_DIR" value="patientService/logs" />
+        <env name="DB_URL" value="jdbc:mysql://localhost:3306/patientService?useSSL=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true" />
+        <env name="DB_USERNAME" value="root" />
+        <env name="DB_PASSWORD" value="rootroot" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.medilabo.patientService.PatientServiceApplication" />
+      <module name="patientService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.openclassrooms.medilabo.patientService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DiabetesReportControllerIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="diabetesReportService" />
       <extension name="coverage">
@@ -95,107 +199,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiabetesReportControllerIT.testGetDiabetesReportWithMockedServices" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="diabetesReportService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.openclassrooms.medilabo.diabetesReportService.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <extension name="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
-        </ENTRIES>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.openclassrooms.medilabo.diabetesReportService.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT" />
-      <option name="METHOD_NAME" value="testGetDiabetesReportWithMockedServices" />
-      <option name="TEST_OBJECT" value="method" />
-      <envs>
-        <env name="LOG_DIR" value="logs" />
-      </envs>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DiabetesReportServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="diabetesReportService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.openclassrooms.medilabo.diabetesReportService.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <extension name="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
-        </ENTRIES>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.openclassrooms.medilabo.diabetesReportService.service" />
-      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportServiceTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DiabetesReportServiceTest.shouldReturnEarlyOnsetForFemaleOver30With8Triggers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="diabetesReportService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.openclassrooms.medilabo.diabetesReportService.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.openclassrooms.medilabo.diabetesReportService.service" />
-      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportServiceTest" />
-      <option name="METHOD_NAME" value="shouldReturnEarlyOnsetForFemaleOver30With8Triggers" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DiabetesReportServiceTest.shouldReturnInDangerForMaleUnder30With4Triggers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="diabetesReportService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.openclassrooms.medilabo.diabetesReportService.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.openclassrooms.medilabo.diabetesReportService.service" />
-      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportServiceTest" />
-      <option name="METHOD_NAME" value="shouldReturnInDangerForMaleUnder30With4Triggers" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.DiabetesReportControllerIT.testGetDiabetesReportWithMockedServices" />
-      <item itemvalue="JUnit.DiabetesReportServiceTest" />
-      <item itemvalue="JUnit.DiabetesReportServiceTest.shouldReturnEarlyOnsetForFemaleOver30With8Triggers" />
-      <item itemvalue="JUnit.DiabetesReportServiceTest.shouldReturnInDangerForMaleUnder30With4Triggers" />
+      <item itemvalue="Application.DiabetesReportServiceApplication" />
+      <item itemvalue="Application.GatewayServiceApplication" />
+      <item itemvalue="Application.NotesServiceApplication" />
+      <item itemvalue="Application.PatientServiceApplication" />
       <item itemvalue="JUnit.DiabetesReportControllerIT" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DiabetesReportServiceApplication" />
+        <item itemvalue="Application.NotesServiceApplication" />
+        <item itemvalue="Application.PatientServiceApplication" />
+        <item itemvalue="Application.GatewayServiceApplication" />
         <item itemvalue="JUnit.DiabetesReportControllerIT" />
-        <item itemvalue="JUnit.DiabetesReportControllerIT.testGetDiabetesReportWithMockedServices" />
-        <item itemvalue="JUnit.DiabetesReportServiceTest.shouldReturnEarlyOnsetForFemaleOver30With8Triggers" />
-        <item itemvalue="JUnit.DiabetesReportServiceTest.shouldReturnInDangerForMaleUnder30With4Triggers" />
-        <item itemvalue="JUnit.DiabetesReportServiceTest" />
       </list>
     </recent_temporary>
   </component>
