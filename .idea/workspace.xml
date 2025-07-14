@@ -7,8 +7,7 @@
     <list default="true" id="51ef69f2-837f-43bc-8453-529048f2839a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatewayService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patientService/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/patientService/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notesService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notesService/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +63,12 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Workspace\OC_P9_Medilabo\mongodb-init" />
+      <recent name="C:\Workspace\OC_P9_Medilabo\mongodb-init\init-mongodb.js" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.GatewayServiceApplication">
     <configuration name="DiabetesReportServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <envs>

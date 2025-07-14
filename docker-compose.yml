@@ -1,4 +1,3 @@
-version: '3.8'
 
 services:
   mysql:
@@ -46,11 +45,36 @@ services:
       - "8080:8080"
     depends_on:
       - patientservice
+      - notesservice
+    networks:
+      - medilabo_net
+
+  mongodb:
+    image: mongo:6.0
+    container_name: mongodb
+    ports:
+      - "27018:27017"
+    volumes:
+      - mongodb_data:/data/db
+      - ./mongodb-init/init-mongodb.js:/docker-entrypoint-initdb.d/init-mongodb.js:ro
+    networks:
+      - medilabo_net
+
+  notesservice:
+    build:
+      context: ./notesService
+    container_name: notes_service
+    ports:
+      - "8082:8082"
+    depends_on:
+      mongodb:
+        condition: service_started
     networks:
       - medilabo_net
 
 volumes:
   mysql_data:
+  mongodb_data:
 
 networks:
   medilabo_net:
