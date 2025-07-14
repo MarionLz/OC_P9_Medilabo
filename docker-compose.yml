@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_patient
+    environment:
+      MYSQL_DATABASE: patientdb
+      MYSQL_USER: patientuser
+      MYSQL_PASSWORD: patientpass
+      MYSQL_ROOT_PASSWORD: rootpass
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./mysql-init:/docker-entrypoint-initdb.d
+    networks:
+      - medilabo_net
+    healthcheck:
+      test: [ "CMD", "mysqladmin", "ping", "-h", "localhost" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  patientservice:
+    image: patientservice:latest
+    build:
+      context: ./patientService
+    container_name: patient_service
+    ports:
+      - "8081:8081"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/patientdb
+      SPRING_DATASOURCE_USERNAME: patientuser
+      SPRING_DATASOURCE_PASSWORD: patientpass
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - medilabo_net
+
+volumes:
+  mysql_data:
+
+networks:
+  medilabo_net:
