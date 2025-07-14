@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="51ef69f2-837f-43bc-8453-529048f2839a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patientService/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/patientService/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatewayService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patientService/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/patientService/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,31 +39,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.DiabetesReportServiceApplication.executor": "Run",
-    "Application.GatewayServiceApplication.executor": "Run",
-    "Application.NotesServiceApplication.executor": "Run",
-    "Application.PatientServiceApplication.executor": "Run",
-    "JUnit.DiabetesReportControllerIT.executor": "Run",
-    "JUnit.DiabetesReportControllerIT.testGetDiabetesReportWithMockedServices.executor": "Run",
-    "JUnit.DiabetesReportServiceTest.executor": "Run",
-    "JUnit.DiabetesReportServiceTest.shouldReturnEarlyOnsetForFemaleOver30With8Triggers.executor": "Run",
-    "JUnit.DiabetesReportServiceTest.shouldReturnInDangerForMaleUnder30With4Triggers.executor": "Run",
-    "JUnit.NoteControllerIT.testAddNoteToPatient_shouldAddNote.executor": "Run",
-    "JUnit.NoteControllerIT.testGetNotesByPatientId_shouldReturnNotFoundWhenNoNotes.executor": "Run",
-    "JUnit.NoteControllerIT.testGetNotesByPatientId_shouldReturnNotes.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/docker",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Workspace/intellij",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.DiabetesReportServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GatewayServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NotesServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PatientServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DiabetesReportControllerIT.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DiabetesReportControllerIT.testGetDiabetesReportWithMockedServices.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DiabetesReportServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DiabetesReportServiceTest.shouldReturnEarlyOnsetForFemaleOver30With8Triggers.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DiabetesReportServiceTest.shouldReturnInDangerForMaleUnder30With4Triggers.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.NoteControllerIT.testAddNoteToPatient_shouldAddNote.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.NoteControllerIT.testGetNotesByPatientId_shouldReturnNotFoundWhenNoNotes.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.NoteControllerIT.testGetNotesByPatientId_shouldReturnNotes.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/docker&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Workspace/intellij&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.GatewayServiceApplication">
     <configuration name="DiabetesReportServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <envs>
