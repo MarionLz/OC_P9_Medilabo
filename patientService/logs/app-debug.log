@@ -43,3 +43,194 @@
 2025-07-11 15:52:24 [http-nio-8081-exec-3] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching all patients from repository
 2025-07-11 15:52:24 [http-nio-8081-exec-3] DEBUG com.openclassrooms.medilabo.patientService.service.PatientService - Found 4 patient records
 2025-07-11 15:52:24 [http-nio-8081-exec-3] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning 4 patients
+2025-07-13 18:46:59 [main] INFO  com.openclassrooms.medilabo.patientService.PatientServiceApplication - Starting PatientServiceApplication using Java 21.0.5 with PID 25524 (C:\Workspace\OC_P9_Medilabo\patientService\target\classes started by Cy in C:\Workspace\OC_P9_Medilabo)
+2025-07-13 18:46:59 [main] DEBUG com.openclassrooms.medilabo.patientService.PatientServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-13 18:46:59 [main] INFO  com.openclassrooms.medilabo.patientService.PatientServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-13 18:47:08 [main] INFO  com.openclassrooms.medilabo.patientService.PatientServiceApplication - Started PatientServiceApplication in 10.332 seconds (process running for 12.891)
+2025-07-13 18:56:49 [http-nio-8081-exec-1] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 18:56:49 [http-nio-8081-exec-1] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 18:56:50 [http-nio-8081-exec-1] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 19:05:38 [http-nio-8081-exec-9] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 19:05:38 [http-nio-8081-exec-9] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 19:05:38 [http-nio-8081-exec-9] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 19:05:44 [http-nio-8081-exec-6] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 2
+2025-07-13 19:05:44 [http-nio-8081-exec-6] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 2
+2025-07-13 19:05:44 [http-nio-8081-exec-6] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1945-06-24, gender=M)
+2025-07-13 19:05:57 [http-nio-8081-exec-2] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 3
+2025-07-13 19:05:57 [http-nio-8081-exec-2] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 3
+2025-07-13 19:05:57 [http-nio-8081-exec-2] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=2004-06-18, gender=M)
+2025-07-13 19:12:45 [http-nio-8081-exec-7] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 3
+2025-07-13 19:12:45 [http-nio-8081-exec-7] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 3
+2025-07-13 19:12:45 [http-nio-8081-exec-7] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=2004-06-18, gender=M)
+2025-07-13 19:13:06 [http-nio-8081-exec-8] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 2
+2025-07-13 19:13:06 [http-nio-8081-exec-8] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 2
+2025-07-13 19:13:06 [http-nio-8081-exec-8] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1945-06-24, gender=M)
+2025-07-13 19:19:09 [http-nio-8081-exec-10] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 2
+2025-07-13 19:19:09 [http-nio-8081-exec-10] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 2
+2025-07-13 19:19:09 [http-nio-8081-exec-10] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1945-06-24, gender=M)
+2025-07-13 19:22:07 [http-nio-8081-exec-4] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 2
+2025-07-13 19:22:07 [http-nio-8081-exec-4] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 2
+2025-07-13 19:22:07 [http-nio-8081-exec-4] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1945-06-24, gender=M)
+2025-07-13 19:27:38 [http-nio-8081-exec-6] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 2
+2025-07-13 19:27:38 [http-nio-8081-exec-6] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 2
+2025-07-13 19:27:38 [http-nio-8081-exec-6] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1945-06-24, gender=M)
+2025-07-13 19:28:36 [http-nio-8081-exec-2] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 2
+2025-07-13 19:28:36 [http-nio-8081-exec-2] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 2
+2025-07-13 19:28:36 [http-nio-8081-exec-2] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1945-06-24, gender=M)
+2025-07-13 19:28:41 [http-nio-8081-exec-3] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 3
+2025-07-13 19:28:41 [http-nio-8081-exec-3] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 3
+2025-07-13 19:28:41 [http-nio-8081-exec-3] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=2004-06-18, gender=M)
+2025-07-13 19:28:57 [http-nio-8081-exec-7] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 4
+2025-07-13 19:28:57 [http-nio-8081-exec-7] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 4
+2025-07-13 19:28:57 [http-nio-8081-exec-7] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=2002-06-28, gender=F)
+2025-07-13 19:30:30 [http-nio-8081-exec-5] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 4
+2025-07-13 19:30:30 [http-nio-8081-exec-5] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 4
+2025-07-13 19:30:30 [http-nio-8081-exec-5] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=2002-06-28, gender=F)
+2025-07-13 19:32:30 [http-nio-8081-exec-1] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 4
+2025-07-13 19:32:30 [http-nio-8081-exec-1] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 4
+2025-07-13 19:32:30 [http-nio-8081-exec-1] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=2002-06-28, gender=F)
+2025-07-13 19:32:36 [http-nio-8081-exec-4] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 3
+2025-07-13 19:32:36 [http-nio-8081-exec-4] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 3
+2025-07-13 19:32:36 [http-nio-8081-exec-4] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=2004-06-18, gender=M)
+2025-07-13 19:32:48 [http-nio-8081-exec-9] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 2
+2025-07-13 19:32:48 [http-nio-8081-exec-9] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 2
+2025-07-13 19:32:48 [http-nio-8081-exec-9] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1945-06-24, gender=M)
+2025-07-13 19:32:51 [http-nio-8081-exec-6] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 19:32:51 [http-nio-8081-exec-6] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 19:32:51 [http-nio-8081-exec-6] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 19:32:55 [http-nio-8081-exec-2] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 3
+2025-07-13 19:32:55 [http-nio-8081-exec-2] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 3
+2025-07-13 19:32:55 [http-nio-8081-exec-2] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=2004-06-18, gender=M)
+2025-07-13 19:36:33 [http-nio-8081-exec-7] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 3
+2025-07-13 19:36:33 [http-nio-8081-exec-7] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 3
+2025-07-13 19:36:33 [http-nio-8081-exec-7] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=2004-06-18, gender=M)
+2025-07-13 19:38:22 [http-nio-8081-exec-5] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 3
+2025-07-13 19:38:22 [http-nio-8081-exec-5] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 3
+2025-07-13 19:38:22 [http-nio-8081-exec-5] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=2004-06-18, gender=M)
+2025-07-13 20:08:56 [http-nio-8081-exec-1] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 20:08:56 [http-nio-8081-exec-1] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 20:08:56 [http-nio-8081-exec-1] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 20:10:56 [http-nio-8081-exec-9] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 20:10:56 [http-nio-8081-exec-9] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 20:10:56 [http-nio-8081-exec-9] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 20:14:48 [http-nio-8081-exec-2] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 20:14:48 [http-nio-8081-exec-2] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 20:14:48 [http-nio-8081-exec-2] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 20:17:39 [http-nio-8081-exec-7] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 20:17:39 [http-nio-8081-exec-7] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 20:17:39 [http-nio-8081-exec-7] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 20:19:02 [http-nio-8081-exec-5] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 20:19:02 [http-nio-8081-exec-5] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 20:19:02 [http-nio-8081-exec-5] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 20:20:12 [http-nio-8081-exec-1] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 20:20:12 [http-nio-8081-exec-1] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 20:20:12 [http-nio-8081-exec-1] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 20:22:31 [http-nio-8081-exec-9] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 20:22:31 [http-nio-8081-exec-9] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 20:22:31 [http-nio-8081-exec-9] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 20:26:27 [http-nio-8081-exec-2] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 20:26:27 [http-nio-8081-exec-2] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 20:26:27 [http-nio-8081-exec-2] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 20:28:10 [http-nio-8081-exec-7] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 20:28:10 [http-nio-8081-exec-7] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 20:28:10 [http-nio-8081-exec-7] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 20:32:08 [http-nio-8081-exec-5] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 20:32:08 [http-nio-8081-exec-5] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 20:32:08 [http-nio-8081-exec-5] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 20:34:41 [http-nio-8081-exec-1] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 20:34:41 [http-nio-8081-exec-1] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 20:34:41 [http-nio-8081-exec-1] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 20:36:29 [http-nio-8081-exec-9] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 20:36:29 [http-nio-8081-exec-9] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 20:36:29 [http-nio-8081-exec-9] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 20:36:58 [http-nio-8081-exec-6] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 20:36:58 [http-nio-8081-exec-6] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 20:36:58 [http-nio-8081-exec-6] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 20:38:47 [http-nio-8081-exec-3] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 20:38:47 [http-nio-8081-exec-3] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 20:38:47 [http-nio-8081-exec-3] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 20:42:57 [http-nio-8081-exec-8] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 20:42:57 [http-nio-8081-exec-8] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 20:42:57 [http-nio-8081-exec-8] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 20:46:49 [http-nio-8081-exec-10] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 20:46:49 [http-nio-8081-exec-10] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 20:46:49 [http-nio-8081-exec-10] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 20:50:14 [http-nio-8081-exec-4] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 20:50:14 [http-nio-8081-exec-4] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 20:50:14 [http-nio-8081-exec-4] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 20:54:20 [http-nio-8081-exec-6] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 20:54:20 [http-nio-8081-exec-6] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 20:54:20 [http-nio-8081-exec-6] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 20:55:29 [http-nio-8081-exec-3] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 20:55:29 [http-nio-8081-exec-3] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 20:55:29 [http-nio-8081-exec-3] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 20:56:56 [http-nio-8081-exec-8] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 20:56:56 [http-nio-8081-exec-8] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 20:56:56 [http-nio-8081-exec-8] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 21:00:47 [http-nio-8081-exec-10] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 21:00:47 [http-nio-8081-exec-10] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 21:00:47 [http-nio-8081-exec-10] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 21:02:28 [http-nio-8081-exec-4] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 21:02:28 [http-nio-8081-exec-4] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 21:02:28 [http-nio-8081-exec-4] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 21:09:58 [http-nio-8081-exec-6] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 21:09:58 [http-nio-8081-exec-6] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 21:09:58 [http-nio-8081-exec-6] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 21:12:42 [http-nio-8081-exec-3] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 21:12:42 [http-nio-8081-exec-3] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 21:12:42 [http-nio-8081-exec-3] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 21:15:51 [http-nio-8081-exec-8] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 21:15:51 [http-nio-8081-exec-8] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 21:15:51 [http-nio-8081-exec-8] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 21:16:45 [http-nio-8081-exec-5] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 21:16:45 [http-nio-8081-exec-5] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 21:16:45 [http-nio-8081-exec-5] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 21:19:20 [http-nio-8081-exec-1] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 21:19:20 [http-nio-8081-exec-1] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 21:19:20 [http-nio-8081-exec-1] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-13 21:20:45 [http-nio-8081-exec-9] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-13 21:20:45 [http-nio-8081-exec-9] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-13 21:20:45 [http-nio-8081-exec-9] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-14 09:33:57 [main] INFO  com.openclassrooms.medilabo.patientService.PatientServiceApplication - Starting PatientServiceApplication using Java 21.0.5 with PID 16836 (C:\Workspace\OC_P9_Medilabo\patientService\target\classes started by Cy in C:\Workspace\OC_P9_Medilabo)
+2025-07-14 09:33:57 [main] DEBUG com.openclassrooms.medilabo.patientService.PatientServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-14 09:33:57 [main] INFO  com.openclassrooms.medilabo.patientService.PatientServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-14 09:34:06 [main] INFO  com.openclassrooms.medilabo.patientService.PatientServiceApplication - Started PatientServiceApplication in 9.766 seconds (process running for 15.568)
+2025-07-14 09:34:22 [http-nio-8081-exec-2] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-14 09:34:22 [http-nio-8081-exec-2] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-14 09:34:22 [http-nio-8081-exec-2] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-14 09:39:17 [http-nio-8081-exec-3] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-14 09:39:17 [http-nio-8081-exec-3] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-14 09:39:17 [http-nio-8081-exec-3] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-14 10:09:47 [http-nio-8081-exec-5] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-14 10:09:47 [http-nio-8081-exec-5] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-14 10:09:47 [http-nio-8081-exec-5] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-14 10:21:35 [http-nio-8081-exec-7] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-14 10:21:35 [http-nio-8081-exec-7] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-14 10:21:35 [http-nio-8081-exec-7] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-14 10:27:14 [http-nio-8081-exec-9] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-14 10:27:14 [http-nio-8081-exec-9] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-14 10:27:14 [http-nio-8081-exec-9] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-14 10:31:03 [http-nio-8081-exec-2] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-14 10:31:03 [http-nio-8081-exec-2] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-14 10:31:03 [http-nio-8081-exec-2] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-14 10:33:55 [http-nio-8081-exec-3] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-14 10:33:55 [http-nio-8081-exec-3] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-14 10:33:55 [http-nio-8081-exec-3] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-14 10:39:04 [http-nio-8081-exec-5] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-14 10:39:04 [http-nio-8081-exec-5] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-14 10:39:04 [http-nio-8081-exec-5] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-14 10:49:37 [http-nio-8081-exec-7] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-14 10:49:37 [http-nio-8081-exec-7] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-14 10:49:37 [http-nio-8081-exec-7] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-14 10:59:38 [http-nio-8081-exec-9] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-14 10:59:38 [http-nio-8081-exec-9] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-14 10:59:38 [http-nio-8081-exec-9] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-14 11:05:27 [http-nio-8081-exec-2] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-14 11:05:27 [http-nio-8081-exec-2] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-14 11:05:27 [http-nio-8081-exec-2] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-14 11:06:05 [http-nio-8081-exec-1] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-14 11:06:05 [http-nio-8081-exec-1] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-14 11:06:05 [http-nio-8081-exec-1] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-14 11:07:11 [http-nio-8081-exec-4] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-14 11:07:11 [http-nio-8081-exec-4] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-14 11:07:11 [http-nio-8081-exec-4] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
