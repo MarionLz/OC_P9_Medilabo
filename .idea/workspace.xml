@@ -7,10 +7,9 @@
     <list default="true" id="51ef69f2-837f-43bc-8453-529048f2839a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diabetesReportService/logs/app-debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/diabetesReportService/logs/app-debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diabetesReportService/src/main/java/com/openclassrooms/medilabo/diabetesReportService/enums/TriggerTerm.java" beforeDir="false" afterPath="$PROJECT_DIR$/diabetesReportService/src/main/java/com/openclassrooms/medilabo/diabetesReportService/enums/TriggerTerm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diabetesReportService/src/main/java/com/openclassrooms/medilabo/diabetesReportService/service/DiabetesReportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/diabetesReportService/src/main/java/com/openclassrooms/medilabo/diabetesReportService/service/DiabetesReportService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diabetesReportService/src/test/java/com/openclassrooms/medilabo/diabetesReportService/DiabetesReportServiceApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/notesService/logs/app-debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/notesService/logs/app-debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notesService/src/main/resources/data/notes-sample.json" beforeDir="false" afterPath="$PROJECT_DIR$/notesService/src/main/resources/data/notes-sample.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patientService/logs/app-debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/patientService/logs/app-debug.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -41,27 +40,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.DiabetesReportServiceApplication.executor": "Run",
-    "Application.GatewayServiceApplication.executor": "Run",
-    "Application.NotesServiceApplication.executor": "Run",
-    "Application.PatientServiceApplication.executor": "Run",
-    "JUnit.NoteControllerIT.testAddNoteToPatient_shouldAddNote.executor": "Run",
-    "JUnit.NoteControllerIT.testGetNotesByPatientId_shouldReturnNotFoundWhenNoNotes.executor": "Run",
-    "JUnit.NoteControllerIT.testGetNotesByPatientId_shouldReturnNotes.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/diabetesReportService",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Workspace/intellij",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.DiabetesReportServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GatewayServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NotesServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PatientServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DiabetesReportControllerIT.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.NoteControllerIT.testAddNoteToPatient_shouldAddNote.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.NoteControllerIT.testGetNotesByPatientId_shouldReturnNotFoundWhenNoNotes.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.NoteControllerIT.testGetNotesByPatientId_shouldReturnNotes.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/diabetesReportService&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Workspace/intellij&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.DiabetesReportServiceApplication">
+}</component>
+  <component name="RunManager" selected="JUnit.DiabetesReportControllerIT">
     <configuration name="DiabetesReportServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <envs>
         <env name="LOG_DIR" value="diabetesReportService/logs" />
@@ -156,18 +156,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NoteControllerIT.testGetNotesByPatientId_shouldReturnNotFoundWhenNoNotes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="notesService" />
+    <configuration name="DiabetesReportControllerIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="diabetesReportService" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.openclassrooms.medilabo.notesService.controller.*" />
+          <option name="PATTERN" value="com.openclassrooms.medilabo.diabetesReportService.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.openclassrooms.medilabo.notesService.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.medilabo.notesService.controller.NoteControllerIT" />
-      <option name="METHOD_NAME" value="testGetNotesByPatientId_shouldReturnNotFoundWhenNoNotes" />
-      <option name="TEST_OBJECT" value="method" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.openclassrooms.medilabo.diabetesReportService.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <envs>
+        <env name="LOG_DIR" value="logs" />
+      </envs>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -177,15 +190,15 @@
       <item itemvalue="Application.DiabetesReportServiceApplication" />
       <item itemvalue="Application.NotesServiceApplication" />
       <item itemvalue="Application.PatientServiceApplication" />
-      <item itemvalue="JUnit.NoteControllerIT.testGetNotesByPatientId_shouldReturnNotFoundWhenNoNotes" />
+      <item itemvalue="JUnit.DiabetesReportControllerIT" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DiabetesReportServiceApplication" />
-        <item itemvalue="Application.NotesServiceApplication" />
+        <item itemvalue="JUnit.DiabetesReportControllerIT" />
         <item itemvalue="Application.PatientServiceApplication" />
+        <item itemvalue="Application.NotesServiceApplication" />
         <item itemvalue="Application.GatewayServiceApplication" />
-        <item itemvalue="JUnit.NoteControllerIT.testGetNotesByPatientId_shouldReturnNotFoundWhenNoNotes" />
+        <item itemvalue="Application.DiabetesReportServiceApplication" />
       </list>
     </recent_temporary>
   </component>
