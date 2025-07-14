@@ -1,6 +1,6 @@
 package com.openclassrooms.medilabo.diabetesReportService.service;
 
-import com.openclassrooms.medilabo.diabetesReportService.Dto.PatientDto;
+import com.openclassrooms.medilabo.diabetesReportService.dto.PatientDto;
 import com.openclassrooms.medilabo.diabetesReportService.enums.RiskLevel;
 import com.openclassrooms.medilabo.diabetesReportService.enums.TriggerTerm;
 import org.apache.logging.log4j.LogManager;
