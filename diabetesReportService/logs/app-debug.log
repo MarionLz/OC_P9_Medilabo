@@ -361,3 +361,76 @@
 2025-07-14 09:34:23 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Trigger terms count: 1
 2025-07-14 09:34:23 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Calculated risk level: NONE
 2025-07-14 09:34:23 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Generated diabetes report: NONE
+2025-07-14 10:48:51 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT - Starting DiabetesReportControllerIT using Java 21.0.5 with PID 7740 (started by Cy in C:\Workspace\OC_P9_Medilabo\diabetesReportService)
+2025-07-14 10:48:51 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-14 10:48:51 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT - No active profile set, falling back to 1 default profile: "default"
+2025-07-14 10:49:30 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT - Starting DiabetesReportControllerIT using Java 21.0.5 with PID 19644 (started by Cy in C:\Workspace\OC_P9_Medilabo\diabetesReportService)
+2025-07-14 10:49:30 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-14 10:49:30 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT - No active profile set, falling back to 1 default profile: "default"
+2025-07-14 10:49:34 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT - Started DiabetesReportControllerIT in 4.862 seconds (process running for 7.655)
+2025-07-14 10:49:36 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT - Debug message for file logging
+2025-07-14 10:49:36 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Received request to get diabetes report
+2025-07-14 10:49:36 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Generating diabetes risk report for patient ID 1
+2025-07-14 10:49:37 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Retrieved patient demographics: gender=F, dateOfBirth=1966-12-31
+2025-07-14 10:49:38 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Retrieved 1 note(s) for patient ID 1
+2025-07-14 10:49:38 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Patient age calculated: 58
+2025-07-14 10:49:38 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Found trigger term 'poids'
+2025-07-14 10:49:38 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Trigger terms count: 1
+2025-07-14 10:49:38 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Calculated risk level: NONE
+2025-07-14 10:49:38 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Generated diabetes report: NONE
+2025-07-14 10:59:32 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT - Starting DiabetesReportControllerIT using Java 21.0.5 with PID 7852 (started by Cy in C:\Workspace\OC_P9_Medilabo\diabetesReportService)
+2025-07-14 10:59:33 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-14 10:59:33 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT - No active profile set, falling back to 1 default profile: "default"
+2025-07-14 10:59:36 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT - Started DiabetesReportControllerIT in 4.524 seconds (process running for 7.818)
+2025-07-14 10:59:38 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Received request to get diabetes report
+2025-07-14 10:59:38 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Generating diabetes risk report for patient ID 1
+2025-07-14 10:59:38 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Retrieved patient demographics: gender=F, dateOfBirth=1966-12-31
+2025-07-14 10:59:39 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Retrieved 1 note(s) for patient ID 1
+2025-07-14 10:59:39 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Patient age calculated: 58
+2025-07-14 10:59:39 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Found trigger term 'poids'
+2025-07-14 10:59:39 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Trigger terms count: 1
+2025-07-14 10:59:39 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Calculated risk level: NONE
+2025-07-14 10:59:39 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Generated diabetes report: NONE
+2025-07-14 11:07:06 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT - Starting DiabetesReportControllerIT using Java 21.0.5 with PID 12360 (started by Cy in C:\Workspace\OC_P9_Medilabo\diabetesReportService)
+2025-07-14 11:07:06 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-14 11:07:06 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT - No active profile set, falling back to 1 default profile: "default"
+2025-07-14 11:07:09 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT - Started DiabetesReportControllerIT in 2.644 seconds (process running for 4.478)
+2025-07-14 11:07:10 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Received request to get diabetes report
+2025-07-14 11:07:10 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Generating diabetes risk report for patient ID 1
+2025-07-14 11:07:11 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Retrieved patient demographics: gender=F, dateOfBirth=1966-12-31
+2025-07-14 11:07:12 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Retrieved 1 note(s) for patient ID 1
+2025-07-14 11:07:12 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Patient age calculated: 58
+2025-07-14 11:07:12 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Found trigger term 'poids'
+2025-07-14 11:07:12 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Trigger terms count: 1
+2025-07-14 11:07:12 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Calculated risk level: NONE
+2025-07-14 11:07:12 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Generated diabetes report: NONE
+2025-07-14 11:12:33 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT - Starting DiabetesReportControllerIT using Java 21.0.5 with PID 14016 (started by Cy in C:\Workspace\OC_P9_Medilabo\diabetesReportService)
+2025-07-14 11:12:33 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-14 11:12:33 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT - No active profile set, falling back to 1 default profile: "default"
+2025-07-14 11:12:36 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT - Started DiabetesReportControllerIT in 4.518 seconds (process running for 6.801)
+2025-07-14 11:12:38 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Received request to get diabetes report
+2025-07-14 11:12:38 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Generating diabetes risk report for patient ID 1
+2025-07-14 11:12:38 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Retrieved patient demographics: gender=M, dateOfBirth=2000-07-14
+2025-07-14 11:12:38 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Retrieved 3 note(s) for patient ID 1
+2025-07-14 11:12:38 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Patient age calculated: 25
+2025-07-14 11:12:38 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Found trigger term 'poids'
+2025-07-14 11:12:38 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Found trigger term 'fumeur'
+2025-07-14 11:12:38 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Found trigger term 'hémoglobine a1c'
+2025-07-14 11:12:38 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Trigger terms count: 3
+2025-07-14 11:12:38 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Calculated risk level: IN_DANGER
+2025-07-14 11:12:38 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Generated diabetes report: IN_DANGER
+2025-07-14 11:15:44 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT - Starting DiabetesReportControllerIT using Java 21.0.5 with PID 19908 (started by Cy in C:\Workspace\OC_P9_Medilabo\diabetesReportService)
+2025-07-14 11:15:44 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-14 11:15:44 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT - No active profile set, falling back to 1 default profile: "default"
+2025-07-14 11:15:48 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT - Started DiabetesReportControllerIT in 4.742 seconds (process running for 6.542)
+2025-07-14 11:15:50 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Received request to get diabetes report
+2025-07-14 11:15:50 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Generating diabetes risk report for patient ID 1
+2025-07-14 11:15:50 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Retrieved patient demographics: gender=M, dateOfBirth=2000-07-14
+2025-07-14 11:15:50 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Retrieved 3 note(s) for patient ID 1
+2025-07-14 11:15:50 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Patient age calculated: 25
+2025-07-14 11:15:50 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Found trigger term 'poids'
+2025-07-14 11:15:50 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Found trigger term 'fumeur'
+2025-07-14 11:15:50 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Found trigger term 'hémoglobine a1c'
+2025-07-14 11:15:50 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Trigger terms count: 3
+2025-07-14 11:15:50 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Calculated risk level: IN_DANGER
+2025-07-14 11:15:50 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Generated diabetes report: IN_DANGER
