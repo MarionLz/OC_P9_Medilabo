@@ -4,17 +4,17 @@ db.notes.insertMany([
   {
     patientId: 1,
     patient: "TestNone",
-    note: "Le patient déclare qu'il 'se sent très bien'. Poids égal ou inférieur à la normale."
+    note: "Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé"
   },
   {
     patientId: 2,
     patient: "TestBorderline",
-    note: "Le patient déclare qu'il ressent beaucoup de stress au travail. Il se plaint également de maux de tête."
+    note: "Le patient déclare qu'il ressent beaucoup de stress au travail Il se plaint également que son audition est anormale dernièrement"
   },
   {
     patientId: 2,
     patient: "TestBorderline",
-    note: "Le patient déclare avoir fait une réaction aux médicaments au cours des 3 derniers mois."
+    note: "Le patient déclare avoir fait une réaction aux médicaments au cours des 3 derniers mois Il remarque également que son audition continue d'être anormale"
   },
   {
     patientId: 3,
