@@ -2,7 +2,6 @@
 services:
   mysql:
     image: mysql:8.0
-    container_name: mysql_patient
     environment:
       MYSQL_DATABASE: patientdb
       MYSQL_USER: patientuser
@@ -11,6 +10,7 @@ services:
     ports:
       - "3307:3306"
     volumes:
+      - mysql_data:/var/lib/mysql
       - ./mysql-init:/docker-entrypoint-initdb.d
     networks:
       - medilabo_net
@@ -40,18 +40,17 @@ services:
   gatewayservice:
     build:
       context: ./gatewayService
-    container_name: gateway_service
     ports:
       - "8080:8080"
     depends_on:
       - patientservice
       - notesservice
+      - diabetesreportservice
     networks:
       - medilabo_net
 
   mongodb:
     image: mongo:6.0
-    container_name: mongodb
     ports:
       - "27018:27017"
     volumes:
@@ -63,12 +62,23 @@ services:
   notesservice:
     build:
       context: ./notesService
-    container_name: notes_service
     ports:
       - "8082:8082"
     depends_on:
       mongodb:
         condition: service_started
+    networks:
+      - medilabo_net
+
+  diabetesreportservice:
+    build:
+      context: ./diabetesReportService
+    ports:
+      - "8083:8083"
+    environment:
+      - GATEWAY_URL=http://gatewayservice:8080
+      - GATEWAY_USERNAME=user
+      - GATEWAY_PASSWORD=password
     networks:
       - medilabo_net
 
