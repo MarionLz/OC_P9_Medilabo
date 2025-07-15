@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51ef69f2-837f-43bc-8453-529048f2839a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diabetesReportService/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/diabetesReportService/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patientService/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/patientService/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +54,7 @@
     "JUnit.NoteControllerIT.testGetNotesByPatientId_shouldReturnNotes.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/documentation",
+    "git-widget-placeholder": "feature/docker",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Workspace/intellij",
     "project.structure.last.edited": "Project",
