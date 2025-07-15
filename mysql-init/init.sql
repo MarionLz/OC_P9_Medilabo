@@ -21,4 +21,3 @@ VALUES ('Test', 'TestInDanger', '2004-06-18', 'M', '300-444-5555', '3 Club Road'
 
 INSERT INTO patients (first_name, last_name, date_of_birth, gender, phone_number, address)
 VALUES ('Test', 'TestEarlyOnset', '2002-06-28', 'F', '400-555-6666', '4 Valley Dr');
-

@@ -1,0 +1,19 @@
+# Étape 1 : build
+FROM maven:3.9.6-eclipse-temurin AS builder
+WORKDIR /app
+COPY pom.xml .
+COPY src ./src
+RUN mvn clean package -DskipTests
+
+# Étape 2 : runtime
+FROM eclipse-temurin:21-jre
+WORKDIR /app
+
+ENV LOG_DIR=/patientService/logs
+RUN mkdir -p /patientService/logs
+
+COPY --from=builder /app/target/patientService-0.0.1-SNAPSHOT.jar patientService.jar
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "patientService.jar"]
+
+
