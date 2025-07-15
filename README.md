@@ -4,10 +4,11 @@ Medilabo est une application web composée de microservices permettant la gestio
 
 ## 📚 Sommaire
 
-- [Description des microservices](#-description-des-microservices)
 - [Technologies utilisées](#-technologies-utilisées)
+- [Description des microservices](#-description-des-microservices)
 - [Authentification via Basic Auth](#-authentification-via-basic-auth)
 - [Lancement de l'application](#-lancement-de-lapplication-avec-docker-compose)
+- [Endpoints des Microservices](#-endpoints-des-microservices)
 - [Suggestions d’améliorations (Greencode)](#-suggestions-daméliorations--greencode)
 
 ## 🛠 Technologies utilisées
@@ -34,7 +35,6 @@ Chaque microservice est responsable d’un domaine métier spécifique, et commu
 | Note Service     | Gère l'ajout de notes de suivi des patients par le praticien (ex : symptômes, antécédents) avec stockage des données en base MongoDB | Spring Boot, MongoDB, Log4j2                  |
 | Report Service   | Génère un rapport de risque de diabète pour un patient à partir de son âge, son sexe et les notes du praticien.                      | Spring Boot, Appel REST, Log4j2                |
 | Frontend        | Interface utilisateur pour interagir avec les microservices.                                                                         | React, Vite, Axios, React Router               |
-
 
 ## 🔐 Authentification via Basic Auth
 
@@ -98,5 +98,29 @@ docker-compose down
 ### 💾 Bases de données
 
 Les bases de données MySQL (pour les patients) et MongoDB (pour les notes) sont automatiquement initialisées avec des scripts au moment du démarrage via Docker. Aucun script manuel n'est requis.
+
+## 📡 Endpoints des Microservices
+
+### 🔹 Patient Service (`http://localhost:8081`)
+| Méthode | Endpoint                    | Description                         |
+|---------|-----------------------------|-------------------------------------|
+| GET     | /patients                   | Liste tous les patients             |
+| GET     | /patients/{id}              | Détail d’un patient                 |
+| POST    | /patients                   | Créer un nouveau patient            |
+| PUT     | /patients/{id}              | Modifier un patient existant        |
+| GET  | /patients/{id}/demographics | Obtenir l'âge et le sexe du patient |
+
+### 🔹 Note Service (`http://localhost:8082`)
+| Méthode | Endpoint               | Description                   |
+|---------|------------------------|-------------------------------|
+| GET     | /notes/patient/{id}    | Liste des notes d’un patient  |
+| POST    | /notes/patient/{id}    | Ajouter une note              |
+
+### 🔹 Report Service (`http://localhost:8083`)
+| Méthode | Endpoint                      | Description                            |
+|---------|-------------------------------|----------------------------------------|
+| GET     | /diabetes-report/patient/{id} | Rapport de risque pour un patient      |
+
+
 
 ## 🌱 Suggestions d’améliorations – GreenCode
