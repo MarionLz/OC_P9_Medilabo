@@ -8,7 +8,7 @@ Medilabo est une application web composée de microservices permettant la gestio
 - [Description des microservices](#-description-des-microservices)
 - [Authentification via Basic Auth](#-authentification-via-basic-auth)
 - [Lancement de l'application](#-lancement-de-lapplication-avec-docker-compose)
-- [Endpoints des Microservices](#-endpoints-des-microservices)
+- [Endpoints des microservices](#-endpoints-des-microservices)
 - [Suggestions d’améliorations (Greencode)](#-suggestions-daméliorations--greencode)
 
 ## 🛠 Technologies utilisées
@@ -99,7 +99,7 @@ docker-compose down
 
 Les bases de données MySQL (pour les patients) et MongoDB (pour les notes) sont automatiquement initialisées avec des scripts au moment du démarrage via Docker. Aucun script manuel n'est requis.
 
-## 📡 Endpoints des Microservices
+## 📡 Endpoints des microservices
 
 ### 🔹 Patient Service (`http://localhost:8081`)
 | Méthode | Endpoint                    | Description                         |
@@ -124,3 +124,87 @@ Les bases de données MySQL (pour les patients) et MongoDB (pour les notes) sont
 
 
 ## 🌱 Suggestions d’améliorations – GreenCode
+
+### ♻️ Qu’est-ce que le GreenCode ?
+
+Le GreenCode, ou éco-conception logicielle, désigne l’ensemble des pratiques de développement visant à réduire l’impact environnemental des logiciels.
+
+Cela passe par :
+- une utilisation plus sobre des ressources matérielles (CPU, mémoire, réseau, stockage),
+- la réduction des traitements inutiles,
+- et la limitation du nombre de composants ou d’interactions non nécessaires.
+
+Appliquer le GreenCode ne signifie pas sacrifier la qualité ou les performances, mais plutôt penser efficacité et simplicité à chaque étape du développement.
+
+Dans ce projet, plusieurs actions ont été identifiées pour aligner l’architecture et le code avec ces principes.
+
+### ⚙️ 1. Réduction du nombre de microservices
+
+🔸 **Fusionner `Note Service` et `Patient Service`**
+
+Ces deux services sont fortement couplés : chaque note est directement liée à un patient, et inversement.
+
+Les regrouper permettrait de :
+- Réduire les **appels réseau** (moins de trafic, moins de latence),
+- Diminuer le nombre de **conteneurs à faire tourner**, ce qui réduit la consommation de **CPU/mémoire**.
+
+📌 **Action** : Regrouper les entités `Patient` et `Note` dans un seul microservice.
+
+➡️ Cela suit une logique GreenCode : **moins de fragmentation = moins de charge**.
+
+
+### 🧠 2. Réduction des appels interservices
+
+🔸 **Optimiser la communication entre le Report Service et le service PatientRecord (fusion de Patient + Note)**
+
+Même après la fusion des microservices, le Report Service doit toujours interroger un autre service pour récupérer les données nécessaires.
+
+Pour limiter davantage les appels réseau, on pourrait :
+- **Éviter les requêtes multiples** côté Report,
+- **Réduire la quantité de données transférées** au strict nécessaire.
+
+📌 **Actions proposées** :
+- Ajouter un endpoint d’agrégation dans le service PatientRecord, par exemple :  
+  `GET /patient/{id}/full-record` → retourne à la fois les infos du patient **et** ses notes dans une seule réponse.
+- Mettre en place une **mise en cache temporaire** dans le Report Service :
+    - Les données (patient + notes) sont stockées en mémoire ou via un cache distribué (ex : Redis) pour éviter des appels répétés.
+    - Le cache est utilisé tant que les données ne changent pas.
+
+➡️ Cela réduit le **trafic réseau**, les **temps de réponse**, et la **charge sur les services**, en cohérence avec les principes du GreenCode.
+
+### 🐳 Optimisation Docker (GreenCode)
+
+#### ✅ Ce qui est déjà mis en place
+
+- **Build multi-étapes**  
+  La compilation se fait dans une image Maven, puis seule l’application compilée (JAR) est copiée dans une image d’exécution légère (`eclipse-temurin:21-jre-alpine`).  
+  → Image finale plus légère, déploiement plus rapide et économie d’espace disque.
+
+- **Image d’exécution Alpine**  
+  Utilisation d’une image Alpine (environ 60 Mo) au lieu d’une image Debian plus lourde.  
+  → Réduction de la taille de l’image, consommation mémoire et temps de démarrage optimisés.
+
+- **Gestion dédiée des logs**  
+  Création d’un répertoire de logs (`/notesService/logs`) permettant potentiellement le montage d’un volume externe.  
+  → Limite l’écriture dans le conteneur et facilite la gestion des fichiers de logs.
+
+- **Tests exclus du build de production**  
+  La commande Maven inclut l’option `-DskipTests` pour ne pas exécuter les tests lors de la construction de l’image finale.  
+  → Gain de temps et de ressources CPU lors du build.
+
+---
+
+#### 🔧 Améliorations possibles
+
+- **Limiter les ressources des conteneurs**  
+  Ajouter dans le fichier `docker-compose.yml` des paramètres comme :
+  ```yaml
+  mem_limit: 512m
+  cpu_shares: 512
+  ```
+  → Permet de restreindre la mémoire et le CPU utilisés par chaque conteneur, évitant ainsi une consommation excessive.
+
+
+- **Nettoyer les caches inutiles**
+
+Supprimer les fichiers temporaires ou caches Maven dans l’image finale si présents, pour réduire encore la taille.
