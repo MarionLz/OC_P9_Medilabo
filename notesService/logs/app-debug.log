@@ -349,3 +349,13 @@
 2025-07-14 11:57:34 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to add note to patient with ID 1
 2025-07-14 11:57:34 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Attempting to add new note to patient ID 1
 2025-07-14 11:57:34 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note added successfully for patient ID 1
+2025-07-15 14:20:27 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Starting NotesServiceApplication v0.0.1-SNAPSHOT using Java 21.0.7 with PID 1 (/app/notesService.jar started by root in /app)
+2025-07-15 14:20:27 [main] DEBUG com.openclassrooms.medilabo.notesService.NotesServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-15 14:20:27 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-15 14:20:59 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Started NotesServiceApplication in 36.084 seconds (process running for 39.155)
+2025-07-15 14:21:31 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-15 14:21:31 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-15 14:21:32 [http-nio-8082-exec-1] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-15 14:21:34 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-15 14:21:34 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-15 14:21:34 [http-nio-8082-exec-2] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1

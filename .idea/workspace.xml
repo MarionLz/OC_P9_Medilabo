@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="51ef69f2-837f-43bc-8453-529048f2839a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodb-init/init-mongodb.js" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb-init/init-mongodb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diabetesReportService/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/diabetesReportService/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notesService/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/notesService/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patientService/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/patientService/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patientService/logs/app-debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/patientService/logs/app-debug.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
