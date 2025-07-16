@@ -6,6 +6,9 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
+/**
+ * Data Transfer Object representing patient demographic information.
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

@@ -7,6 +7,9 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
+/**
+ * Entity representing a patient in the database.
+ */
 @Data
 @NoArgsConstructor
 @Entity

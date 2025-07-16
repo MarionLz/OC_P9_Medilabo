@@ -6,10 +6,13 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
+/**
+ * Data Transfer Object representing patient demographics.
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class PatientDto {
+public class PatientDemographicsDto {
 
     private LocalDate dateOfBirth;
     private String gender;

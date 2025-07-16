@@ -10,6 +10,9 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+/**
+ * Service class for managing patient notes.
+ */
 @Service
 public class NoteService {
 
@@ -17,10 +20,21 @@ public class NoteService {
 
     private final NoteRepository noteRepository;
 
+    /**
+     * Constructor for NoteService.
+     *
+     * @param noteRepository the repository for note operations
+     */
     public NoteService(NoteRepository noteRepository) {
         this.noteRepository = noteRepository;
     }
 
+    /**
+     * Retrieves all notes for a given patient by their ID.
+     *
+     * @param patientId the ID of the patient
+     * @return an Optional containing a list of note contents, or empty if none found
+     */
     public Optional<List<String>> getNotesByPatientId(Integer patientId) {
         log.info("Fetching notes for patient ID {}", patientId);
         List<Note> notes = noteRepository.findAllByPatientId(patientId);
@@ -33,6 +47,14 @@ public class NoteService {
         return Optional.of(noteContents);
     }
 
+    /**
+     * Adds a new note to a patient.
+     *
+     * @param patientId the ID of the patient
+     * @param newNote the content of the new note
+     * @param patientName the name or identifier of the patient
+     * @return true if the note was added successfully, false otherwise
+     */
     public boolean addNoteToPatient(Integer patientId, String newNote, String patientName) {
         log.info("Attempting to add new note to patient ID {}", patientId);
         try {

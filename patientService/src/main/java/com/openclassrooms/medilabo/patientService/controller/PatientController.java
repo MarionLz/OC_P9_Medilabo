@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * REST controller for managing patient data.
+ */
 @RestController
 @RequestMapping("/patients")
 public class PatientController {
@@ -20,10 +23,20 @@ public class PatientController {
 
     private final PatientService patientService;
 
+    /**
+     * Constructor for PatientController.
+     *
+     * @param patientService the service handling patient operations
+     */
     public PatientController(PatientService patientService) {
         this.patientService = patientService;
     }
 
+    /**
+     * Retrieves all patients.
+     *
+     * @return a list of PatientDto objects
+     */
     @GetMapping
     public List<PatientDto> getAllPatients() {
         log.info("Received request to get all patients");
@@ -32,6 +45,12 @@ public class PatientController {
         return patients;
     }
 
+    /**
+     * Retrieves a patient by their ID.
+     *
+     * @param id the ID of the patient
+     * @return a ResponseEntity containing the PatientDto
+     */
     @GetMapping("/{id}")
     public ResponseEntity<PatientDto> getPatientById(@PathVariable Integer id) {
         log.info("Received request to get patient with ID {}", id);
@@ -40,6 +59,12 @@ public class PatientController {
         return ResponseEntity.ok(dto);
     }
 
+    /**
+     * Creates a new patient.
+     *
+     * @param patientDto the patient data to create
+     * @return a ResponseEntity with status CREATED
+     */
     @PostMapping
     public ResponseEntity<?> createPatient(@RequestBody @Valid PatientDto patientDto) {
         log.info("Received request to create patient: {}", patientDto);
@@ -48,6 +73,13 @@ public class PatientController {
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
+    /**
+     * Updates an existing patient.
+     *
+     * @param id the ID of the patient to update
+     * @param patientDto the updated patient data
+     * @return a ResponseEntity with status OK
+     */
     @PutMapping("/{id}")
     public ResponseEntity<?> updatePatient(@PathVariable Integer id, @RequestBody @Valid PatientDto patientDto) {
         log.info("Received request to update patient with ID {}: {}", id, patientDto);
@@ -56,6 +88,12 @@ public class PatientController {
         return ResponseEntity.status(HttpStatus.OK).build();
     }
 
+    /**
+     * Retrieves demographic information for a patient by their ID.
+     *
+     * @param id the ID of the patient
+     * @return a ResponseEntity containing the PatientDemographicsDto
+     */
     @GetMapping("/{id}/demographics")
     public ResponseEntity<PatientDemographicsDto> getDemographicsInfoByPatientId(@PathVariable Integer id) {
         log.info("Received request to get demographics info with ID {}", id);
