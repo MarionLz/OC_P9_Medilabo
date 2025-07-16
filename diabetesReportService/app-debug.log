@@ -1,0 +1,45 @@
+2025-07-16 17:05:38 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.DiabetesReportServiceApplication - Starting DiabetesReportServiceApplication using Java 21.0.5 with PID 9168 (C:\Workspace\Medilabo\diabetesReportService\target\classes started by Cy in C:\Workspace\Medilabo)
+2025-07-16 17:05:38 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.DiabetesReportServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-16 17:05:38 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.DiabetesReportServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-16 17:05:41 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.DiabetesReportServiceApplication - Started DiabetesReportServiceApplication in 4.106 seconds (process running for 4.88)
+2025-07-16 17:06:02 [http-nio-8083-exec-1] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Received request to get diabetes report
+2025-07-16 17:06:02 [http-nio-8083-exec-1] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Generating diabetes risk report for patient ID 1
+2025-07-16 17:08:06 [http-nio-8083-exec-9] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Received request to get diabetes report
+2025-07-16 17:08:06 [http-nio-8083-exec-9] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Generating diabetes risk report for patient ID 3
+2025-07-16 17:12:15 [http-nio-8083-exec-2] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Received request to get diabetes report
+2025-07-16 17:12:15 [http-nio-8083-exec-2] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Generating diabetes risk report for patient ID 1
+2025-07-16 17:19:54 [http-nio-8083-exec-7] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Received request to get diabetes report
+2025-07-16 17:19:54 [http-nio-8083-exec-7] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Generating diabetes risk report for patient ID 1
+2025-07-16 17:23:11 [http-nio-8083-exec-8] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Received request to get diabetes report
+2025-07-16 17:23:11 [http-nio-8083-exec-8] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Generating diabetes risk report for patient ID 1
+2025-07-16 17:24:49 [http-nio-8083-exec-10] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Received request to get diabetes report
+2025-07-16 17:24:49 [http-nio-8083-exec-10] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Generating diabetes risk report for patient ID 3
+2025-07-16 17:24:50 [http-nio-8083-exec-10] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Retrieved patient demographics: gender=M, dateOfBirth=2004-06-18
+2025-07-16 17:24:51 [http-nio-8083-exec-10] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Retrieved 2 note(s) for patient ID 3
+2025-07-16 17:24:51 [http-nio-8083-exec-10] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Patient age calculated: 21
+2025-07-16 17:24:51 [http-nio-8083-exec-10] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Found trigger term 'fumeur'
+2025-07-16 17:24:51 [http-nio-8083-exec-10] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Found trigger term 'anormal'
+2025-07-16 17:24:51 [http-nio-8083-exec-10] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Found trigger term 'cholestérol'
+2025-07-16 17:24:51 [http-nio-8083-exec-10] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Trigger terms count: 3
+2025-07-16 17:24:51 [http-nio-8083-exec-10] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Calculated risk level: IN_DANGER
+2025-07-16 17:24:51 [http-nio-8083-exec-10] DEBUG com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Generated diabetes report: IN_DANGER
+2025-07-16 17:25:04 [http-nio-8083-exec-1] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Received request to get diabetes report
+2025-07-16 17:25:04 [http-nio-8083-exec-1] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Generating diabetes risk report for patient ID 1
+2025-07-16 17:25:04 [http-nio-8083-exec-1] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Retrieved patient demographics: gender=F, dateOfBirth=1966-12-31
+2025-07-16 17:25:04 [http-nio-8083-exec-1] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Retrieved 1 note(s) for patient ID 1
+2025-07-16 17:25:04 [http-nio-8083-exec-1] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Patient age calculated: 58
+2025-07-16 17:25:04 [http-nio-8083-exec-1] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Found trigger term 'poids'
+2025-07-16 17:25:04 [http-nio-8083-exec-1] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Trigger terms count: 1
+2025-07-16 17:25:04 [http-nio-8083-exec-1] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Calculated risk level: NONE
+2025-07-16 17:25:04 [http-nio-8083-exec-1] DEBUG com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Generated diabetes report: NONE
+2025-07-16 17:25:49 [http-nio-8083-exec-9] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Received request to get diabetes report
+2025-07-16 17:25:49 [http-nio-8083-exec-9] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Generating diabetes risk report for patient ID 1
+2025-07-16 17:25:50 [http-nio-8083-exec-9] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Retrieved patient demographics: gender=F, dateOfBirth=1966-12-31
+2025-07-16 17:25:50 [http-nio-8083-exec-9] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Retrieved 1 note(s) for patient ID 1
+2025-07-16 17:25:50 [http-nio-8083-exec-9] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Patient age calculated: 58
+2025-07-16 17:25:50 [http-nio-8083-exec-9] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Found trigger term 'poids'
+2025-07-16 17:25:50 [http-nio-8083-exec-9] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Trigger terms count: 1
+2025-07-16 17:25:50 [http-nio-8083-exec-9] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Calculated risk level: NONE
+2025-07-16 17:25:50 [http-nio-8083-exec-9] DEBUG com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Generated diabetes report: NONE
+2025-07-16 17:26:30 [http-nio-8083-exec-2] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Received request to get diabetes report
+2025-07-16 17:26:30 [http-nio-8083-exec-2] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Generating diabetes risk report for patient ID 1

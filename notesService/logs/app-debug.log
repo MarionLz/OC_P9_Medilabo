@@ -369,3 +369,35 @@
 2025-07-15 17:44:50 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
 2025-07-15 17:44:50 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
 2025-07-15 17:44:50 [http-nio-8082-exec-2] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-16 16:54:23 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Starting NotesServiceApplication using Java 21.0.5 with PID 10284 (C:\Workspace\Medilabo\notesService\target\classes started by Cy in C:\Workspace\Medilabo)
+2025-07-16 16:54:23 [main] DEBUG com.openclassrooms.medilabo.notesService.NotesServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-16 16:54:23 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-16 16:54:30 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Started NotesServiceApplication in 8.657 seconds (process running for 9.971)
+2025-07-16 16:54:38 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Starting NotesServiceApplication using Java 21.0.5 with PID 19312 (C:\Workspace\Medilabo\notesService\target\classes started by Cy in C:\Workspace\Medilabo)
+2025-07-16 16:54:38 [main] DEBUG com.openclassrooms.medilabo.notesService.NotesServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-16 16:54:38 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-16 16:54:46 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Started NotesServiceApplication in 8.886 seconds (process running for 9.76)
+2025-07-16 16:58:07 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Starting NotesServiceApplication using Java 21.0.5 with PID 6456 (C:\Workspace\Medilabo\notesService\target\classes started by Cy in C:\Workspace\Medilabo)
+2025-07-16 16:58:07 [main] DEBUG com.openclassrooms.medilabo.notesService.NotesServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-16 16:58:07 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-16 16:58:12 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Started NotesServiceApplication in 5.245 seconds (process running for 5.933)
+2025-07-16 17:00:27 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Starting NotesServiceApplication using Java 21.0.5 with PID 11676 (C:\Workspace\Medilabo\notesService\target\classes started by Cy in C:\Workspace\Medilabo)
+2025-07-16 17:00:27 [main] DEBUG com.openclassrooms.medilabo.notesService.NotesServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-16 17:00:27 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-16 17:00:32 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Started NotesServiceApplication in 5.136 seconds (process running for 5.879)
+2025-07-16 17:01:41 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-16 17:01:41 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-16 17:01:41 [http-nio-8082-exec-3] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-16 17:03:57 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Starting NotesServiceApplication using Java 21.0.5 with PID 400 (C:\Workspace\Medilabo\notesService\target\classes started by Cy in C:\Workspace\Medilabo)
+2025-07-16 17:03:57 [main] DEBUG com.openclassrooms.medilabo.notesService.NotesServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-16 17:03:57 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-16 17:04:02 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Started NotesServiceApplication in 5.525 seconds (process running for 6.397)
+2025-07-16 17:24:50 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 3
+2025-07-16 17:24:50 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 3
+2025-07-16 17:24:50 [http-nio-8082-exec-2] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 2 notes for patient ID 3
+2025-07-16 17:25:04 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-16 17:25:04 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-16 17:25:04 [http-nio-8082-exec-1] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-16 17:25:50 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-16 17:25:50 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-16 17:25:50 [http-nio-8082-exec-3] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
