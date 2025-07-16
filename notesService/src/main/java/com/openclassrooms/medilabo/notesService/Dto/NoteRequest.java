@@ -4,6 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * DTO representing a request to add a note for a patient.
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

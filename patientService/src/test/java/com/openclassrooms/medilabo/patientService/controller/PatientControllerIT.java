@@ -14,28 +14,49 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.web.servlet.MockMvc;
 
 import java.time.LocalDate;
+import java.util.Base64;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
+/**
+ * Integration tests for PatientController.
+ * Tests REST endpoints for patient management.
+ */
 @SpringBootTest
 @AutoConfigureMockMvc
 @ActiveProfiles("test")
 public class PatientControllerIT {
 
+    /** MockMvc for performing HTTP requests in tests. */
     @Autowired
     private MockMvc mockMvc;
 
+    /** ObjectMapper for serializing/deserializing JSON. */
     @Autowired
     private ObjectMapper objectMapper;
 
+    /** Repository for managing patient entities in tests. */
     @Autowired
     private PatientRepository patientRepository;
 
+    /** ID of the patient Alice, used in tests. */
     private Integer aliceId;
 
+    private String basicAuthHeader;
+
+    /**
+     * Sets up the test data before each test.
+     * Clears the repository and adds two patients.
+     */
     @BeforeEach
     void setup() {
+
+        String username = "user";
+        String password = "password";
+        basicAuthHeader = "Basic " + Base64.getEncoder()
+                .encodeToString((username + ":" + password).getBytes());
+
         patientRepository.deleteAll();
 
         PatientEntity alice = patientRepository.save(new PatientEntity("Alice", "Dupont", LocalDate.of(1985, 5, 12),
@@ -45,30 +66,45 @@ public class PatientControllerIT {
                 "M", "444-555-6666", "34 avenue B"));
     }
 
+    /**
+     * Tests that all patients are returned by the GET /patients endpoint.
+     */
     @Test
     void shouldReturnAllPatients() throws Exception {
-        mockMvc.perform(get("/patients"))
+        mockMvc.perform(get("/patients")
+                        .header("Authorization", basicAuthHeader))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(jsonPath("$.length()").value(2))
                 .andExpect(jsonPath("$[0].firstName").value("Alice"));
     }
 
+    /**
+     * Tests that a patient is returned by their ID using GET /patients/{id}.
+     */
     @Test
     void shouldReturnPatientWithGivenId() throws Exception {
-        mockMvc.perform(get("/patients/"+ aliceId))
+        mockMvc.perform(get("/patients/"+ aliceId)
+                        .header("Authorization", basicAuthHeader))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(jsonPath("$.firstName").value("Alice"));
     }
 
+    /**
+     * Tests that a 404 error is returned when requesting a non-existent patient.
+     */
     @Test
     void shouldReturnNotFoundExceptionWithUnknownId() throws Exception {
-        mockMvc.perform(get("/patients/"+ 9999))
+        mockMvc.perform(get("/patients/"+ 9999)
+                        .header("Authorization", basicAuthHeader))
                 .andExpect(status().isNotFound())
                 .andExpect(jsonPath("$.error").value("Patient not found with id: 9999"));
     }
 
+    /**
+     * Tests that a new patient can be created using POST /patients.
+     */
     @Test
     void shouldCreateNewPatient() throws Exception {
         PatientDto patientDto = new PatientDto("John", "Doe", LocalDate.of(1980, 1, 1),
@@ -76,10 +112,14 @@ public class PatientControllerIT {
 
         mockMvc.perform(post("/patients")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(objectMapper.writeValueAsString(patientDto)))
+                        .content(objectMapper.writeValueAsString(patientDto))
+                        .header("Authorization", basicAuthHeader))
                 .andExpect(status().isCreated());
     }
 
+    /**
+     * Tests that a bad request is returned when creating an invalid patient.
+     */
     @Test
     void shouldReturnBadRequestWhenCreatingInvalidPatient() throws Exception {
         PatientDto invalidPatient = new PatientDto("Marie", "Martin", LocalDate.of(1980, 1, 1),
@@ -87,10 +127,14 @@ public class PatientControllerIT {
 
         mockMvc.perform(post("/patients")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(objectMapper.writeValueAsString(invalidPatient)))
+                        .content(objectMapper.writeValueAsString(invalidPatient))
+                        .header("Authorization", basicAuthHeader))
                 .andExpect(status().isBadRequest());
     }
 
+    /**
+     * Tests that an existing patient can be updated using PUT /patients/{id}.
+     */
     @Test
     void shouldUpdatePatient() throws Exception {
         PatientDto updatedPatient = new PatientDto("Alice", "Dupont", LocalDate.of(1990, 2, 2),
@@ -98,10 +142,14 @@ public class PatientControllerIT {
 
         mockMvc.perform(put("/patients/" + aliceId)
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(objectMapper.writeValueAsString(updatedPatient)))
+                        .content(objectMapper.writeValueAsString(updatedPatient))
+                        .header("Authorization", basicAuthHeader))
                 .andExpect(status().isOk());
     }
 
+    /**
+     * Tests that a 404 error is returned when updating a non-existent patient.
+     */
     @Test
     void shouldReturnNotFoundWhenUpdatingNonExistentPatient() throws Exception {
         PatientDto patientDto = new PatientDto("Ghost", "Patient", LocalDate.of(1970, 1, 1),
@@ -109,9 +157,9 @@ public class PatientControllerIT {
 
         mockMvc.perform(put("/patients/9999")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(objectMapper.writeValueAsString(patientDto)))
+                        .content(objectMapper.writeValueAsString(patientDto))
+                        .header("Authorization", basicAuthHeader))
                 .andExpect(status().isNotFound())
                 .andExpect(jsonPath("$.error").value("Patient not found with id: 9999"));
     }
 }
-

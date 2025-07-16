@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * REST controller for handling diabetes report requests.
+ */
 @RestController
 @RequestMapping("/diabetes-report")
 public class DiabetesReportController {
@@ -17,10 +20,21 @@ public class DiabetesReportController {
 
     private final DiabetesReportService diabetesReportService;
 
+    /**
+     * Constructor for DiabetesReportController.
+     *
+     * @param diabetesReportService the service used to generate diabetes reports
+     */
     public DiabetesReportController(DiabetesReportService diabetesReportService) {
         this.diabetesReportService = diabetesReportService;
     }
 
+    /**
+     * Endpoint to get the diabetes report for a specific patient.
+     *
+     * @param patientId the ID of the patient
+     * @return a ResponseEntity containing the diabetes report as a String
+     */
     @GetMapping("/patient/{patientId}")
     public ResponseEntity<String> getDiabetesReport(@PathVariable Integer patientId) {
         log.info("Received request to get diabetes report");

@@ -11,6 +11,9 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
+/**
+ * Data Transfer Object representing patient information.
+ */
 @Data
 @NoArgsConstructor
 public class PatientDto {

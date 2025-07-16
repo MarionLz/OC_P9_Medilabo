@@ -1,6 +1,6 @@
 package com.openclassrooms.medilabo.diabetesReportService.service;
 
-import com.openclassrooms.medilabo.diabetesReportService.dto.PatientDto;
+import com.openclassrooms.medilabo.diabetesReportService.dto.PatientDemographicsDto;
 import com.openclassrooms.medilabo.diabetesReportService.enums.RiskLevel;
 import com.openclassrooms.medilabo.diabetesReportService.enums.TriggerTerm;
 import org.apache.logging.log4j.LogManager;
@@ -15,6 +15,9 @@ import java.util.List;
 import java.util.Set;
 import java.util.HashSet;
 
+/**
+ * Service for generating diabetes risk reports for patients.
+ */
 @Service
 public class DiabetesReportService {
 
@@ -22,22 +25,31 @@ public class DiabetesReportService {
 
     private final WebClient webClient;
 
+    /**
+     * Constructor for DiabetesReportService.
+     *
+     * @param webClient the WebClient used to communicate with external services
+     */
     public DiabetesReportService(WebClient webClient) {
         this.webClient = webClient;
     }
 
+    /**
+     * Generates a diabetes risk report for a given patient.
+     *
+     * @param patientId the ID of the patient
+     * @return the risk level as a String
+     */
     public String generateReport(Integer patientId) {
         log.info("Generating diabetes risk report for patient ID {}", patientId);
 
-        // 1. Récupérer les infos du patient
-        PatientDto patient = webClient.get()
+        PatientDemographicsDto patient = webClient.get()
                 .uri("/api/patients/{id}/demographics", patientId)
                 .retrieve()
-                .bodyToMono(PatientDto.class)
-                .block(); // bloquant ici volontairement pour simplifier
+                .bodyToMono(PatientDemographicsDto.class)
+                .block();
         log.debug("Retrieved patient demographics: gender={}, dateOfBirth={}", patient.getGender(), patient.getDateOfBirth());
 
-        // 2. Récupérer les notes du patient
         List<String> notes = webClient.get()
                 .uri("/api/notes/patient/{id}", patientId)
                 .retrieve()
@@ -63,6 +75,12 @@ public class DiabetesReportService {
         return riskLevel.name();
     }
 
+    /**
+     * Calculates the age of the patient based on their date of birth.
+     *
+     * @param birthDate the date of birth of the patient
+     * @return the age in years
+     */
     private int calculateAge(LocalDate birthDate) {
         if (birthDate == null) {
             throw new IllegalArgumentException("Date of birth cannot be null");
@@ -70,6 +88,12 @@ public class DiabetesReportService {
         return Period.between(birthDate, LocalDate.now()).getYears();
     }
 
+    /**
+     * Counts the number of unique trigger terms found in the patient's notes.
+     *
+     * @param notes the list of notes for the patient
+     * @return the count of trigger terms
+     */
     private int countTriggerTerms(List<String> notes) {
         if (notes == null || notes.isEmpty()) {
             return 0;
@@ -91,6 +115,14 @@ public class DiabetesReportService {
         return count;
     }
 
+    /**
+     * Calculates the diabetes risk level based on age, gender, and trigger term count.
+     *
+     * @param age the age of the patient
+     * @param gender the gender of the patient
+     * @param triggerCount the number of trigger terms found
+     * @return the calculated RiskLevel
+     */
     private RiskLevel calculateRiskLevel(int age, String gender, int triggerCount) {
         if (triggerCount <= 1) {
             return RiskLevel.NONE;
@@ -102,12 +134,25 @@ public class DiabetesReportService {
         }
     }
 
+    /**
+     * Determines the risk level for adult patients (age >= 30).
+     *
+     * @param triggerCount the number of trigger terms found
+     * @return the RiskLevel for adults
+     */
     private RiskLevel riskForAdult(int triggerCount) {
         if (triggerCount <= 5) return RiskLevel.BORDERLINE;
         if (triggerCount <= 7) return RiskLevel.IN_DANGER;
         return RiskLevel.EARLY_ONSET;
     }
 
+    /**
+     * Determines the risk level for patients under 30 years old.
+     *
+     * @param triggerCount the number of trigger terms found
+     * @param gender the gender of the patient
+     * @return the RiskLevel for patients under 30
+     */
     private RiskLevel riskForUnder30(int triggerCount, String gender) {
         switch (gender) {
             case "M":

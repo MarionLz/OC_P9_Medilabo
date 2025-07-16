@@ -8,14 +8,22 @@ import org.springframework.web.cors.CorsConfiguration;
 
 import java.util.List;
 
-@Configuration //dit à Spring que cette classe contient de la configuration à charger au démarrage
+/**
+ * Configuration class for Cross-Origin Resource Sharing (CORS) settings.
+ */
+@Configuration
 public class CorsConfig {
 
+    /**
+     * Bean that defines the CORS configuration source for the application.
+     *
+     * @return the CorsConfigurationSource with allowed origins, methods, headers, and credentials
+     */
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(List.of("http://localhost:5173")); // Front React
-        config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
+        config.setAllowedOrigins(List.of("http://localhost:5173")); // React frontend
+        config.setAllowedMethods(List.of("GET", "POST", "PUT"));
         config.setAllowedHeaders(List.of("*"));
         config.setAllowCredentials(true);
 

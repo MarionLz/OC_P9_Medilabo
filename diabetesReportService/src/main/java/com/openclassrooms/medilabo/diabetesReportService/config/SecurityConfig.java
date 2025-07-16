@@ -14,10 +14,19 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
+/**
+ * Security configuration class for the application.
+ * Sets up in-memory user details and configures HTTP security.
+ */
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
 
+    /**
+     * Creates an in-memory user details service with a default user.
+     *
+     * @return a configured UserDetailsService instance
+     */
     @Bean
     public UserDetailsService users() {
         PasswordEncoder encoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
@@ -28,6 +37,14 @@ public class SecurityConfig {
         return new InMemoryUserDetailsManager(user);
     }
 
+    /**
+     * Configures the security filter chain for HTTP requests.
+     * Secures the /diabetes-report/** endpoint and disables form login and CSRF.
+     *
+     * @param http the HttpSecurity to modify
+     * @return a configured SecurityFilterChain instance
+     * @throws Exception if an error occurs during configuration
+     */
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         return http
@@ -41,4 +58,3 @@ public class SecurityConfig {
                 .build();
     }
 }
-

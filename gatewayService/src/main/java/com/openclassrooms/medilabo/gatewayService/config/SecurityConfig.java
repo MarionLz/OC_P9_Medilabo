@@ -12,10 +12,19 @@ import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.server.SecurityWebFilterChain;
 
+/**
+ * Security configuration class for the gateway service using Spring WebFlux.
+ */
 @Configuration
 @EnableWebFluxSecurity
 public class SecurityConfig {
 
+    /**
+     * Bean that provides user details for authentication.
+     * Creates a single user with username "user" and password "password".
+     *
+     * @return a MapReactiveUserDetailsService containing the user details
+     */
     @Bean
     public MapReactiveUserDetailsService userDetailsService() {
         PasswordEncoder encoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
@@ -27,16 +36,24 @@ public class SecurityConfig {
         return new MapReactiveUserDetailsService(user);
     }
 
+    /**
+     * Configures the security filter chain for the application.
+     * Protects API endpoints under "/api/**" and allows all other exchanges.
+     * Enables HTTP Basic authentication and disables CSRF and form login.
+     *
+     * @param http the ServerHttpSecurity configuration
+     * @return the configured SecurityWebFilterChain
+     */
     @Bean
     public SecurityWebFilterChain springSecurityFilterChain(ServerHttpSecurity http) {
         return http
                 .csrf(ServerHttpSecurity.CsrfSpec::disable)
                 .authorizeExchange(exchange -> exchange
-                        .pathMatchers("/api/**").authenticated() // Protéger seulement les appels API
-                        .anyExchange().permitAll()               // Autoriser tout le reste
+                        .pathMatchers("/api/**").authenticated()
+                        .anyExchange().permitAll()
                 )
-                .httpBasic(Customizer.withDefaults()) // Active l'authentification HTTP Basic
-                .formLogin(ServerHttpSecurity.FormLoginSpec::disable) // Désactive le formulaire HTML
+                .httpBasic(Customizer.withDefaults())
+                .formLogin(ServerHttpSecurity.FormLoginSpec::disable)
                 .build();
     }
 }

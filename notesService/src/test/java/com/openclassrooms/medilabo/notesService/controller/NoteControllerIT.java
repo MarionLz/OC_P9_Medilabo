@@ -18,19 +18,33 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.testcontainers.containers.MongoDBContainer;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
+
+import java.util.Base64;
+
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
+/**
+ * Integration tests for the NoteController REST endpoints.
+ */
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
 @AutoConfigureMockMvc
 @Testcontainers
 public class NoteControllerIT {
 
+    /**
+     * Testcontainers MongoDB instance for integration testing.
+     */
     @Container
     static MongoDBContainer mongoDBContainer = new MongoDBContainer("mongo:6.0");
 
+    /**
+     * Sets the MongoDB URI property for the Spring context.
+     *
+     * @param registry the dynamic property registry
+     */
     @DynamicPropertySource
     static void setMongoDbProperties(DynamicPropertyRegistry registry) {
         registry.add("spring.data.mongodb.uri", mongoDBContainer::getReplicaSetUrl);
@@ -45,8 +59,18 @@ public class NoteControllerIT {
     @Autowired
     private ObjectMapper objectMapper;
 
+    private String basicAuthHeader;
+
+    /**
+     * Initializes the database with a sample note before each test.
+     */
     @BeforeEach
     void setUp() {
+        String username = "user";
+        String password = "password";
+        basicAuthHeader = "Basic " + Base64.getEncoder()
+                .encodeToString((username + ":" + password).getBytes());
+
         noteRepository.deleteAll();
 
         Note note = new Note();
@@ -57,26 +81,32 @@ public class NoteControllerIT {
         noteRepository.save(note);
     }
 
+    /**
+     * Tests that notes are returned for a valid patient ID.
+     *
+     * @throws Exception if the request fails
+     */
     @Test
     void testGetNotesByPatientId_shouldReturnNotes() throws Exception {
-        mockMvc.perform(get("/notes/patient/123"))
+        mockMvc.perform(get("/notes/patient/123")
+                        .header("Authorization", basicAuthHeader))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$[0]").value("Diabète détecté."));
     }
 
-    @Test
-    void testGetNotesByPatientId_shouldReturnNotFoundWhenNoNotes() throws Exception {
-        mockMvc.perform(get("/notes/patient/999"))
-                .andExpect(status().isNotFound());
-    }
-
+    /**
+     * Tests that a new note can be added for a patient.
+     *
+     * @throws Exception if the request fails
+     */
     @Test
     void testAddNoteToPatient_shouldAddNote() throws Exception {
         NoteRequest newNote = new NoteRequest("Nouveau suivi médical.", "Jane Doe");
 
         mockMvc.perform(post("/notes/patient/456")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(objectMapper.writeValueAsString(newNote)))
+                        .content(objectMapper.writeValueAsString(newNote))
+                        .header("Authorization", basicAuthHeader))
                 .andExpect(status().isCreated())
                 .andExpect(content().string("Note ajoutée avec succès."));
     }

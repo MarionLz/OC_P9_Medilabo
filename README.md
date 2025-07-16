@@ -6,6 +6,7 @@ Medilabo est une application web composée de microservices permettant la gestio
 
 - [Technologies utilisées](#-technologies-utilisées)
 - [Description des microservices](#-description-des-microservices)
+- [Architecture du projet](#-architecture-du-projet)
 - [Authentification via Basic Auth](#-authentification-via-basic-auth)
 - [Lancement de l'application](#-lancement-de-lapplication-avec-docker-compose)
 - [Endpoints des microservices](#-endpoints-des-microservices)
@@ -35,6 +36,10 @@ Chaque microservice est responsable d’un domaine métier spécifique, et commu
 | Note Service     | Gère l'ajout de notes de suivi des patients par le praticien (ex : symptômes, antécédents) avec stockage des données en base MongoDB | Spring Boot, MongoDB, Log4j2                  |
 | Report Service   | Génère un rapport de risque de diabète pour un patient à partir de son âge, son sexe et les notes du praticien.                      | Spring Boot, Appel REST, Log4j2                |
 | Frontend        | Interface utilisateur pour interagir avec les microservices.                                                                         | React, Vite, Axios, React Router               |
+
+## 🏗️ Architecture du projet
+
+![Schéma de l'architecture](images/schema_architecture.png)
 
 ## 🔐 Authentification via Basic Auth
 
@@ -172,7 +177,7 @@ Pour limiter davantage les appels réseau, on pourrait :
 
 ➡️ Cela réduit le **trafic réseau**, les **temps de réponse**, et la **charge sur les services**, en cohérence avec les principes du GreenCode.
 
-### 🐳 Optimisation Docker (GreenCode)
+### 🐳 3. Optimisation Docker (GreenCode)
 
 #### ✅ Ce qui est déjà mis en place
 
@@ -205,6 +210,34 @@ Pour limiter davantage les appels réseau, on pourrait :
   → Permet de restreindre la mémoire et le CPU utilisés par chaque conteneur, évitant ainsi une consommation excessive.
 
 
-- **Nettoyer les caches inutiles**
+- **Nettoyer les caches inutiles**  
+  Supprimer les fichiers temporaires ou caches Maven dans l’image finale si présents, pour réduire encore la taille.
 
-Supprimer les fichiers temporaires ou caches Maven dans l’image finale si présents, pour réduire encore la taille.
+### 🔍 4. Logging et observabilité
+
+🔸 Le projet utilise Log4j2, ce qui est une bonne pratique pour la gestion des logs. Toutefois, il est important d’optimiser la verbosité des logs pour limiter l’impact sur les performances et la consommation de ressources.
+
+📌 Actions recommandées :
+- Réduire le niveau de logs en production, par exemple utiliser le niveau **INFO** plutôt que **DEBUG** ou **TRACE**.
+- Configurer la rotation et la taille maximale des fichiers de logs pour éviter une occupation excessive du disque.
+- Limiter les logs aux informations essentielles pour l’analyse des performances et le débogage, afin d’éviter les données superflues.
+
+### 🔐 5. Sécurité et consommation
+
+📌 Actions :
+- La Basic Auth est simple, mais nécessite des en-têtes d’authentification dans chaque requête, ce qui alourdit légèrement le trafic.
+- À terme, envisager une solution plus légère ou stateless (JWT) qui évite les échanges superflus.
+
+### 📉 6. Mesure de l’impact énergétique
+
+📌 Actions recommandées :
+- Intégrer des outils de mesure de l’empreinte énergétique tels que :
+- **GreenFrame.io** pour évaluer l’empreinte carbone du frontend et du backend.
+- **Scaphandre** pour monitorer la consommation des conteneurs Docker ou des systèmes Linux.
+
+🔹 Ces outils permettent de quantifier précisément l’impact des optimisations en termes de consommation d’énergie et d’émissions carbone.
+
+
+---
+
+Merci de votre lecture et bonne exploration ! 🌿

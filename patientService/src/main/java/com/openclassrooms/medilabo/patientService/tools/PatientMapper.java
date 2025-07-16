@@ -10,25 +10,54 @@ import org.mapstruct.MappingTarget;
 
 import java.util.List;
 
+/**
+ * Mapper interface for converting between PatientEntity and DTOs.
+ * Uses MapStruct for automatic mapping.
+ */
 @Mapper(componentModel = "spring")
 public interface PatientMapper {
 
-    // Entity → DTO
+    /**
+     * Converts a PatientEntity to a PatientDto.
+     *
+     * @param entity the PatientEntity to convert
+     * @return the corresponding PatientDto
+     */
     PatientDto patientToPatientDto(PatientEntity entity);
 
-    // DTO → Entity (inverse automatique du mapping précédent)
+    /**
+     * Converts a PatientDto to a PatientEntity.
+     * Inverse mapping of patientToPatientDto.
+     *
+     * @param dto the PatientDto to convert
+     * @return the corresponding PatientEntity
+     */
     @InheritInverseConfiguration
     PatientEntity patientDtoToPatient(PatientDto dto);
 
-    // Mise à jour d'une entité à partir d'un DTO
-    @Mapping(target = "id", ignore = true) // on évite d’écraser l’id existant
+    /**
+     * Updates an existing PatientEntity with values from a PatientDto.
+     * The id field is ignored to avoid overwriting the existing id.
+     *
+     * @param dto the PatientDto containing updated values
+     * @param entity the PatientEntity to update
+     */
+    @Mapping(target = "id", ignore = true)
     void updatePatientFromDto(PatientDto dto, @MappingTarget PatientEntity entity);
 
-    // Liste d'entités → Liste de DTOs
+    /**
+     * Converts a list of PatientEntity objects to a list of PatientDto objects.
+     *
+     * @param entities the list of PatientEntity objects
+     * @return the list of PatientDto objects
+     */
     List<PatientDto> patientListToDtoList(List<PatientEntity> entities);
 
-    // Liste de DTOs → Liste d'entités
-    List<PatientEntity> dtoListToPatientList(List<PatientDto> dtos);
-
+    /**
+     * Converts a PatientEntity to a PatientDemographicsDto.
+     *
+     * @param entity the PatientEntity to convert
+     * @return the corresponding PatientDemographicsDto
+     */
     PatientDemographicsDto patientToPatientDemographicsDto(PatientEntity entity);
 }

@@ -1,0 +1,15 @@
+2025-07-16 15:53:43 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT - Starting DiabetesReportControllerIT using Java 21.0.5 with PID 10720 (started by Cy in C:\Workspace\OC_P9_Medilabo\diabetesReportService)
+2025-07-16 15:53:43 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-16 15:53:43 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT - No active profile set, falling back to 1 default profile: "default"
+2025-07-16 15:53:47 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportControllerIT - Started DiabetesReportControllerIT in 3.888 seconds (process running for 5.731)
+2025-07-16 15:53:48 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Received request to get diabetes report
+2025-07-16 15:53:48 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Generating diabetes risk report for patient ID 1
+2025-07-16 15:53:49 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Retrieved patient demographics: gender=M, dateOfBirth=2000-07-16
+2025-07-16 15:53:49 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Retrieved 3 note(s) for patient ID 1
+2025-07-16 15:53:49 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Patient age calculated: 25
+2025-07-16 15:53:49 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Found trigger term 'poids'
+2025-07-16 15:53:49 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Found trigger term 'fumeur'
+2025-07-16 15:53:49 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Found trigger term 'hémoglobine a1c'
+2025-07-16 15:53:49 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Trigger terms count: 3
+2025-07-16 15:53:49 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Calculated risk level: IN_DANGER
+2025-07-16 15:53:49 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Generated diabetes report: IN_DANGER
