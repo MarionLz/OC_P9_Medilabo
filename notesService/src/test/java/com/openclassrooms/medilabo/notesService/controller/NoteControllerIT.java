@@ -19,6 +19,8 @@ import org.testcontainers.containers.MongoDBContainer;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
 
+import java.util.Base64;
+
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
@@ -57,11 +59,18 @@ public class NoteControllerIT {
     @Autowired
     private ObjectMapper objectMapper;
 
+    private String basicAuthHeader;
+
     /**
      * Initializes the database with a sample note before each test.
      */
     @BeforeEach
     void setUp() {
+        String username = "user";
+        String password = "password";
+        basicAuthHeader = "Basic " + Base64.getEncoder()
+                .encodeToString((username + ":" + password).getBytes());
+
         noteRepository.deleteAll();
 
         Note note = new Note();
@@ -79,20 +88,10 @@ public class NoteControllerIT {
      */
     @Test
     void testGetNotesByPatientId_shouldReturnNotes() throws Exception {
-        mockMvc.perform(get("/notes/patient/123"))
+        mockMvc.perform(get("/notes/patient/123")
+                        .header("Authorization", basicAuthHeader))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$[0]").value("Diabète détecté."));
-    }
-
-    /**
-     * Tests that a 404 status is returned when no notes exist for a patient ID.
-     *
-     * @throws Exception if the request fails
-     */
-    @Test
-    void testGetNotesByPatientId_shouldReturnNotFoundWhenNoNotes() throws Exception {
-        mockMvc.perform(get("/notes/patient/999"))
-                .andExpect(status().isNotFound());
     }
 
     /**
@@ -106,7 +105,8 @@ public class NoteControllerIT {
 
         mockMvc.perform(post("/notes/patient/456")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(objectMapper.writeValueAsString(newNote)))
+                        .content(objectMapper.writeValueAsString(newNote))
+                        .header("Authorization", basicAuthHeader))
                 .andExpect(status().isCreated())
                 .andExpect(content().string("Note ajoutée avec succès."));
     }

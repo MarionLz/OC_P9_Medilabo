@@ -14,6 +14,7 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.web.servlet.MockMvc;
 
 import java.time.LocalDate;
+import java.util.Base64;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
@@ -42,12 +43,20 @@ public class PatientControllerIT {
     /** ID of the patient Alice, used in tests. */
     private Integer aliceId;
 
+    private String basicAuthHeader;
+
     /**
      * Sets up the test data before each test.
      * Clears the repository and adds two patients.
      */
     @BeforeEach
     void setup() {
+
+        String username = "user";
+        String password = "password";
+        basicAuthHeader = "Basic " + Base64.getEncoder()
+                .encodeToString((username + ":" + password).getBytes());
+
         patientRepository.deleteAll();
 
         PatientEntity alice = patientRepository.save(new PatientEntity("Alice", "Dupont", LocalDate.of(1985, 5, 12),
@@ -62,7 +71,8 @@ public class PatientControllerIT {
      */
     @Test
     void shouldReturnAllPatients() throws Exception {
-        mockMvc.perform(get("/patients"))
+        mockMvc.perform(get("/patients")
+                        .header("Authorization", basicAuthHeader))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(jsonPath("$.length()").value(2))
@@ -74,7 +84,8 @@ public class PatientControllerIT {
      */
     @Test
     void shouldReturnPatientWithGivenId() throws Exception {
-        mockMvc.perform(get("/patients/"+ aliceId))
+        mockMvc.perform(get("/patients/"+ aliceId)
+                        .header("Authorization", basicAuthHeader))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(jsonPath("$.firstName").value("Alice"));
@@ -85,7 +96,8 @@ public class PatientControllerIT {
      */
     @Test
     void shouldReturnNotFoundExceptionWithUnknownId() throws Exception {
-        mockMvc.perform(get("/patients/"+ 9999))
+        mockMvc.perform(get("/patients/"+ 9999)
+                        .header("Authorization", basicAuthHeader))
                 .andExpect(status().isNotFound())
                 .andExpect(jsonPath("$.error").value("Patient not found with id: 9999"));
     }
@@ -100,7 +112,8 @@ public class PatientControllerIT {
 
         mockMvc.perform(post("/patients")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(objectMapper.writeValueAsString(patientDto)))
+                        .content(objectMapper.writeValueAsString(patientDto))
+                        .header("Authorization", basicAuthHeader))
                 .andExpect(status().isCreated());
     }
 
@@ -114,7 +127,8 @@ public class PatientControllerIT {
 
         mockMvc.perform(post("/patients")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(objectMapper.writeValueAsString(invalidPatient)))
+                        .content(objectMapper.writeValueAsString(invalidPatient))
+                        .header("Authorization", basicAuthHeader))
                 .andExpect(status().isBadRequest());
     }
 
@@ -128,7 +142,8 @@ public class PatientControllerIT {
 
         mockMvc.perform(put("/patients/" + aliceId)
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(objectMapper.writeValueAsString(updatedPatient)))
+                        .content(objectMapper.writeValueAsString(updatedPatient))
+                        .header("Authorization", basicAuthHeader))
                 .andExpect(status().isOk());
     }
 
@@ -142,7 +157,8 @@ public class PatientControllerIT {
 
         mockMvc.perform(put("/patients/9999")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(objectMapper.writeValueAsString(patientDto)))
+                        .content(objectMapper.writeValueAsString(patientDto))
+                        .header("Authorization", basicAuthHeader))
                 .andExpect(status().isNotFound())
                 .andExpect(jsonPath("$.error").value("Patient not found with id: 9999"));
     }
