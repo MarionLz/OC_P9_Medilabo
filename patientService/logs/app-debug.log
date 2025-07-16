@@ -328,3 +328,10 @@
 2025-07-16 17:25:50 [http-nio-8081-exec-3] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
 2025-07-16 17:25:50 [http-nio-8081-exec-3] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
 2025-07-16 17:25:50 [http-nio-8081-exec-3] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)
+2025-07-16 17:38:13 [main] INFO  com.openclassrooms.medilabo.patientService.PatientServiceApplication - Starting PatientServiceApplication using Java 21.0.5 with PID 800 (C:\Workspace\Medilabo\patientService\target\classes started by Cy in C:\Workspace\Medilabo)
+2025-07-16 17:38:13 [main] DEBUG com.openclassrooms.medilabo.patientService.PatientServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-16 17:38:13 [main] INFO  com.openclassrooms.medilabo.patientService.PatientServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-16 17:38:26 [main] INFO  com.openclassrooms.medilabo.patientService.PatientServiceApplication - Started PatientServiceApplication in 14.146 seconds (process running for 15.754)
+2025-07-16 17:41:44 [http-nio-8081-exec-1] INFO  com.openclassrooms.medilabo.patientService.controller.PatientController - Received request to get demographics info with ID 1
+2025-07-16 17:41:44 [http-nio-8081-exec-1] INFO  com.openclassrooms.medilabo.patientService.service.PatientService - Fetching demographics info for patient with ID 1
+2025-07-16 17:41:44 [http-nio-8081-exec-1] DEBUG com.openclassrooms.medilabo.patientService.controller.PatientController - Returning patient demographics info: PatientDemographicsDto(dateOfBirth=1966-12-31, gender=F)

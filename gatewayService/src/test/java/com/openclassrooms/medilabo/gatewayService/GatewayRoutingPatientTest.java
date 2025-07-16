@@ -8,6 +8,10 @@ import org.springframework.test.context.TestPropertySource;
 import org.springframework.http.HttpStatus;
 import org.springframework.boot.test.autoconfigure.web.reactive.AutoConfigureWebTestClient;
 
+/**
+ * Integration test for routing requests to the Patient Service
+ * through the Spring Cloud Gateway.
+ */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @AutoConfigureWebTestClient
 @TestPropertySource(properties = {
@@ -21,6 +25,10 @@ public class GatewayRoutingPatientTest {
     @Autowired
     private WebTestClient webTestClient;
 
+    /**
+     * Verifies that a GET request to /api/patients/1
+     * is correctly forwarded to the Patient Service and returns HTTP 200 OK.
+     */
     @Test
     void shouldForwardRequestToPatientService() {
         webTestClient.get()
