@@ -1,0 +1,30 @@
+server:
+  port: 8080  # Port de ta gateway
+
+spring:
+  application:
+    name: gateway-service
+
+  cloud:
+    gateway:
+      routes:
+        - id: patient-service
+          uri: http://patientservice:8081
+          predicates:
+            - Path=/api/patients/**
+          filters:
+            - StripPrefix=1
+
+        - id: notes-service
+          uri: http://notesservice:8082
+          predicates:
+            - Path=/api/notes/**
+          filters:
+            - StripPrefix=1
+
+        - id: diabetes-report-service
+          uri: http://diabetesreportservice:8083
+          predicates:
+            - Path=/api/diabetes-report/**
+          filters:
+            - StripPrefix=1

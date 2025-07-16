@@ -1,0 +1,409 @@
+2025-07-11 11:32:42 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Starting NotesServiceApplication using Java 21.0.5 with PID 8508 (C:\Workspace\OC_P9_Medilabo\notesService\target\classes started by Cy in C:\Workspace\OC_P9_Medilabo)
+2025-07-11 11:32:42 [main] DEBUG com.openclassrooms.medilabo.notesService.NotesServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-11 11:32:42 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-11 11:32:47 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Started NotesServiceApplication in 6.309 seconds (process running for 7.433)
+2025-07-11 11:32:54 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-11 11:32:54 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-11 11:32:54 [http-nio-8082-exec-1] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Found 3 notes for patient ID 1
+2025-07-11 11:33:17 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to add note to patient with ID 1
+2025-07-11 11:33:17 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Attempting to add new note to patient ID 1
+2025-07-11 11:33:17 [http-nio-8082-exec-2] DEBUG com.openclassrooms.medilabo.notesService.service.NoteService - Note content to add: Le patient ne mange pas assez de protéines.
+2025-07-11 11:33:17 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note added successfully for patient ID 1
+2025-07-11 11:33:17 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Note added successfully to patient ID 1
+2025-07-11 12:16:57 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Starting NotesServiceApplication using Java 21.0.5 with PID 28204 (C:\Workspace\OC_P9_Medilabo\notesService\target\classes started by Cy in C:\Workspace\OC_P9_Medilabo)
+2025-07-11 12:16:57 [main] DEBUG com.openclassrooms.medilabo.notesService.NotesServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-11 12:16:57 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-11 12:17:02 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Started NotesServiceApplication in 6.268 seconds (process running for 7.935)
+2025-07-11 12:17:45 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-11 12:17:45 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-11 12:17:46 [http-nio-8082-exec-1] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Found 1 notes for patient ID 1
+2025-07-11 12:17:54 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to add note to patient with ID 1
+2025-07-11 12:17:54 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Attempting to add new note to patient ID 1
+2025-07-11 12:17:54 [http-nio-8082-exec-2] DEBUG com.openclassrooms.medilabo.notesService.service.NoteService - Note content to add: null
+2025-07-11 12:17:54 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note added successfully for patient ID 1
+2025-07-11 15:47:49 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Starting NotesServiceApplication using Java 21.0.5 with PID 28148 (C:\Workspace\OC_P9_Medilabo\notesService\target\classes started by Cy in C:\Workspace\OC_P9_Medilabo)
+2025-07-11 15:47:49 [main] DEBUG com.openclassrooms.medilabo.notesService.NotesServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-11 15:47:49 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-11 15:47:55 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Started NotesServiceApplication in 6.769 seconds (process running for 7.683)
+2025-07-11 15:48:08 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-11 15:48:08 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-11 15:48:08 [http-nio-8082-exec-2] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Found 1 notes for patient ID 1
+2025-07-13 18:46:48 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Starting NotesServiceApplication using Java 21.0.5 with PID 4444 (C:\Workspace\OC_P9_Medilabo\notesService\target\classes started by Cy in C:\Workspace\OC_P9_Medilabo)
+2025-07-13 18:46:48 [main] DEBUG com.openclassrooms.medilabo.notesService.NotesServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-13 18:46:48 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-13 18:46:54 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Started NotesServiceApplication in 6.634 seconds (process running for 9.138)
+2025-07-13 18:56:51 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 18:56:51 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 18:56:52 [http-nio-8082-exec-1] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 19:05:38 [http-nio-8082-exec-5] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 19:05:38 [http-nio-8082-exec-5] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 19:05:38 [http-nio-8082-exec-5] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 19:05:44 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 2
+2025-07-13 19:05:44 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 2
+2025-07-13 19:05:44 [http-nio-8082-exec-2] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 2 notes for patient ID 2
+2025-07-13 19:05:57 [http-nio-8082-exec-7] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 3
+2025-07-13 19:05:57 [http-nio-8082-exec-7] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 3
+2025-07-13 19:05:57 [http-nio-8082-exec-7] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 2 notes for patient ID 3
+2025-07-13 19:12:45 [http-nio-8082-exec-6] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 3
+2025-07-13 19:12:45 [http-nio-8082-exec-6] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 3
+2025-07-13 19:12:45 [http-nio-8082-exec-6] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 2 notes for patient ID 3
+2025-07-13 19:13:06 [http-nio-8082-exec-9] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 2
+2025-07-13 19:13:06 [http-nio-8082-exec-9] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 2
+2025-07-13 19:13:06 [http-nio-8082-exec-9] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 2 notes for patient ID 2
+2025-07-13 19:19:10 [http-nio-8082-exec-10] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 2
+2025-07-13 19:19:10 [http-nio-8082-exec-10] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 2
+2025-07-13 19:19:10 [http-nio-8082-exec-10] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 2 notes for patient ID 2
+2025-07-13 19:21:50 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Starting NotesServiceApplication using Java 21.0.5 with PID 27296 (C:\Workspace\OC_P9_Medilabo\notesService\target\classes started by Cy in C:\Workspace\OC_P9_Medilabo)
+2025-07-13 19:21:50 [main] DEBUG com.openclassrooms.medilabo.notesService.NotesServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-13 19:21:50 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-13 19:21:56 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Started NotesServiceApplication in 6.918 seconds (process running for 8.098)
+2025-07-13 19:22:07 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 2
+2025-07-13 19:22:07 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 2
+2025-07-13 19:22:07 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: null
+2025-07-13 19:22:07 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: null
+2025-07-13 19:22:07 [http-nio-8082-exec-1] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 2 notes for patient ID 2
+2025-07-13 19:27:25 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Starting NotesServiceApplication using Java 21.0.5 with PID 29328 (C:\Workspace\OC_P9_Medilabo\notesService\target\classes started by Cy in C:\Workspace\OC_P9_Medilabo)
+2025-07-13 19:27:25 [main] DEBUG com.openclassrooms.medilabo.notesService.NotesServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-13 19:27:25 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-13 19:27:32 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Started NotesServiceApplication in 7.239 seconds (process running for 8.466)
+2025-07-13 19:27:39 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 2
+2025-07-13 19:27:39 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 2
+2025-07-13 19:27:39 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: null
+2025-07-13 19:27:39 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare avoir fait une réaction aux médicaments au cours des 3 derniers mois Il remarque également que son audition continue d'être anormale
+2025-07-13 19:27:39 [http-nio-8082-exec-1] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 2 notes for patient ID 2
+2025-07-13 19:28:27 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Starting NotesServiceApplication using Java 21.0.5 with PID 24296 (C:\Workspace\OC_P9_Medilabo\notesService\target\classes started by Cy in C:\Workspace\OC_P9_Medilabo)
+2025-07-13 19:28:27 [main] DEBUG com.openclassrooms.medilabo.notesService.NotesServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-13 19:28:27 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-13 19:28:32 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Started NotesServiceApplication in 6.43 seconds (process running for 7.793)
+2025-07-13 19:28:37 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 2
+2025-07-13 19:28:37 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 2
+2025-07-13 19:28:37 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il ressent beaucoup de stress au travail Il se plaint également que son audition est anormale dernièrement
+2025-07-13 19:28:37 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare avoir fait une réaction aux médicaments au cours des 3 derniers mois Il remarque également que son audition continue d'être anormale
+2025-07-13 19:28:37 [http-nio-8082-exec-3] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 2 notes for patient ID 2
+2025-07-13 19:28:42 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 3
+2025-07-13 19:28:42 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 3
+2025-07-13 19:28:42 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il fume depuis peu
+2025-07-13 19:28:42 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il est fumeur et qu'il a cessé de fumer l'année dernière Il se plaint également de crises d’apnée respiratoire anormales Tests de laboratoire indiquant un taux de cholestérol LDL élevé
+2025-07-13 19:28:42 [http-nio-8082-exec-1] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 2 notes for patient ID 3
+2025-07-13 19:28:58 [http-nio-8082-exec-5] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 4
+2025-07-13 19:28:58 [http-nio-8082-exec-5] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 4
+2025-07-13 19:28:58 [http-nio-8082-exec-5] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il lui est devenu difficile de monter les escaliers Il se plaint également d’être essoufflé Tests de laboratoire indiquant que les anticorps sont élevés Réaction aux médicaments
+2025-07-13 19:28:58 [http-nio-8082-exec-5] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il a mal au dos lorsqu'il reste assis pendant longtemps
+2025-07-13 19:28:58 [http-nio-8082-exec-5] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare avoir commencé à fumer depuis peu Hémoglobine A1C supérieure au niveau recommandé
+2025-07-13 19:28:58 [http-nio-8082-exec-5] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Taille, Poids, Cholestérol, Vertige et Réaction
+2025-07-13 19:28:58 [http-nio-8082-exec-5] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 4 notes for patient ID 4
+2025-07-13 19:30:30 [http-nio-8082-exec-9] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 4
+2025-07-13 19:30:30 [http-nio-8082-exec-9] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 4
+2025-07-13 19:30:30 [http-nio-8082-exec-9] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il lui est devenu difficile de monter les escaliers Il se plaint également d’être essoufflé Tests de laboratoire indiquant que les anticorps sont élevés Réaction aux médicaments
+2025-07-13 19:30:30 [http-nio-8082-exec-9] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il a mal au dos lorsqu'il reste assis pendant longtemps
+2025-07-13 19:30:30 [http-nio-8082-exec-9] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare avoir commencé à fumer depuis peu Hémoglobine A1C supérieure au niveau recommandé
+2025-07-13 19:30:30 [http-nio-8082-exec-9] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Taille, Poids, Cholestérol, Vertige et Réaction
+2025-07-13 19:30:30 [http-nio-8082-exec-9] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 4 notes for patient ID 4
+2025-07-13 19:32:31 [http-nio-8082-exec-4] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 4
+2025-07-13 19:32:31 [http-nio-8082-exec-4] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 4
+2025-07-13 19:32:31 [http-nio-8082-exec-4] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il lui est devenu difficile de monter les escaliers Il se plaint également d’être essoufflé Tests de laboratoire indiquant que les anticorps sont élevés Réaction aux médicaments
+2025-07-13 19:32:31 [http-nio-8082-exec-4] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il a mal au dos lorsqu'il reste assis pendant longtemps
+2025-07-13 19:32:31 [http-nio-8082-exec-4] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare avoir commencé à fumer depuis peu Hémoglobine A1C supérieure au niveau recommandé
+2025-07-13 19:32:31 [http-nio-8082-exec-4] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Taille, Poids, Cholestérol, Vertige et Réaction
+2025-07-13 19:32:31 [http-nio-8082-exec-4] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 4 notes for patient ID 4
+2025-07-13 19:32:36 [http-nio-8082-exec-8] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 3
+2025-07-13 19:32:36 [http-nio-8082-exec-8] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 3
+2025-07-13 19:32:36 [http-nio-8082-exec-8] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il fume depuis peu
+2025-07-13 19:32:36 [http-nio-8082-exec-8] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il est fumeur et qu'il a cessé de fumer l'année dernière Il se plaint également de crises d’apnée respiratoire anormales Tests de laboratoire indiquant un taux de cholestérol LDL élevé
+2025-07-13 19:32:36 [http-nio-8082-exec-8] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 2 notes for patient ID 3
+2025-07-13 19:32:48 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 2
+2025-07-13 19:32:48 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 2
+2025-07-13 19:32:48 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il ressent beaucoup de stress au travail Il se plaint également que son audition est anormale dernièrement
+2025-07-13 19:32:48 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare avoir fait une réaction aux médicaments au cours des 3 derniers mois Il remarque également que son audition continue d'être anormale
+2025-07-13 19:32:48 [http-nio-8082-exec-2] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 2 notes for patient ID 2
+2025-07-13 19:32:51 [http-nio-8082-exec-10] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 19:32:51 [http-nio-8082-exec-10] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 19:32:51 [http-nio-8082-exec-10] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 19:32:51 [http-nio-8082-exec-10] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 19:32:55 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 3
+2025-07-13 19:32:55 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 3
+2025-07-13 19:32:55 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il fume depuis peu
+2025-07-13 19:32:55 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il est fumeur et qu'il a cessé de fumer l'année dernière Il se plaint également de crises d’apnée respiratoire anormales Tests de laboratoire indiquant un taux de cholestérol LDL élevé
+2025-07-13 19:32:55 [http-nio-8082-exec-3] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 2 notes for patient ID 3
+2025-07-13 19:36:34 [http-nio-8082-exec-5] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 3
+2025-07-13 19:36:34 [http-nio-8082-exec-5] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 3
+2025-07-13 19:36:34 [http-nio-8082-exec-5] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il fume depuis peu
+2025-07-13 19:36:34 [http-nio-8082-exec-5] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il est fumeur et qu'il a cessé de fumer l'année dernière Il se plaint également de crises d’apnée respiratoire anormales Tests de laboratoire indiquant un taux de cholestérol LDL élevé
+2025-07-13 19:36:34 [http-nio-8082-exec-5] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 2 notes for patient ID 3
+2025-07-13 19:38:23 [http-nio-8082-exec-9] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 3
+2025-07-13 19:38:23 [http-nio-8082-exec-9] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 3
+2025-07-13 19:38:23 [http-nio-8082-exec-9] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il fume depuis peu
+2025-07-13 19:38:23 [http-nio-8082-exec-9] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il est fumeur et qu'il a cessé de fumer l'année dernière Il se plaint également de crises d’apnée respiratoire anormales Tests de laboratoire indiquant un taux de cholestérol LDL élevé
+2025-07-13 19:38:23 [http-nio-8082-exec-9] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 2 notes for patient ID 3
+2025-07-13 20:08:56 [http-nio-8082-exec-4] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 20:08:56 [http-nio-8082-exec-4] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 20:08:56 [http-nio-8082-exec-4] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 20:08:56 [http-nio-8082-exec-4] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 20:10:56 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 20:10:56 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 20:10:56 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 20:10:56 [http-nio-8082-exec-2] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 20:14:48 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 20:14:48 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 20:14:48 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 20:14:48 [http-nio-8082-exec-3] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 20:17:39 [http-nio-8082-exec-5] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 20:17:39 [http-nio-8082-exec-5] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 20:17:39 [http-nio-8082-exec-5] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 20:17:39 [http-nio-8082-exec-5] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 20:19:02 [http-nio-8082-exec-9] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 20:19:02 [http-nio-8082-exec-9] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 20:19:02 [http-nio-8082-exec-9] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 20:19:02 [http-nio-8082-exec-9] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 20:20:13 [http-nio-8082-exec-4] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 20:20:13 [http-nio-8082-exec-4] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 20:20:13 [http-nio-8082-exec-4] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 20:20:13 [http-nio-8082-exec-4] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 20:22:32 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 20:22:32 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 20:22:32 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 20:22:32 [http-nio-8082-exec-2] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 20:26:28 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 20:26:28 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 20:26:28 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 20:26:28 [http-nio-8082-exec-3] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 20:28:10 [http-nio-8082-exec-5] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 20:28:10 [http-nio-8082-exec-5] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 20:28:10 [http-nio-8082-exec-5] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 20:28:10 [http-nio-8082-exec-5] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 20:32:09 [http-nio-8082-exec-9] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 20:32:09 [http-nio-8082-exec-9] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 20:32:09 [http-nio-8082-exec-9] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 20:32:09 [http-nio-8082-exec-9] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 20:34:41 [http-nio-8082-exec-4] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 20:34:41 [http-nio-8082-exec-4] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 20:34:41 [http-nio-8082-exec-4] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 20:34:41 [http-nio-8082-exec-4] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 20:36:30 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 20:36:30 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 20:36:30 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 20:36:30 [http-nio-8082-exec-2] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 20:36:59 [http-nio-8082-exec-10] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 20:36:59 [http-nio-8082-exec-10] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 20:36:59 [http-nio-8082-exec-10] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 20:36:59 [http-nio-8082-exec-10] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 20:38:48 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 20:38:48 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 20:38:48 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 20:38:48 [http-nio-8082-exec-1] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 20:42:57 [http-nio-8082-exec-7] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 20:42:57 [http-nio-8082-exec-7] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 20:42:57 [http-nio-8082-exec-7] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 20:42:57 [http-nio-8082-exec-7] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 20:46:50 [http-nio-8082-exec-6] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 20:46:50 [http-nio-8082-exec-6] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 20:46:50 [http-nio-8082-exec-6] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 20:46:50 [http-nio-8082-exec-6] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 20:50:15 [http-nio-8082-exec-8] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 20:50:15 [http-nio-8082-exec-8] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 20:50:15 [http-nio-8082-exec-8] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 20:50:15 [http-nio-8082-exec-8] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 20:54:20 [http-nio-8082-exec-10] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 20:54:20 [http-nio-8082-exec-10] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 20:54:20 [http-nio-8082-exec-10] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 20:54:20 [http-nio-8082-exec-10] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 20:55:29 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 20:55:29 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 20:55:29 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 20:55:29 [http-nio-8082-exec-1] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 20:56:56 [http-nio-8082-exec-7] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 20:56:56 [http-nio-8082-exec-7] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 20:56:56 [http-nio-8082-exec-7] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 20:56:56 [http-nio-8082-exec-7] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 21:00:48 [http-nio-8082-exec-6] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 21:00:48 [http-nio-8082-exec-6] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 21:00:48 [http-nio-8082-exec-6] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 21:00:48 [http-nio-8082-exec-6] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 21:02:28 [http-nio-8082-exec-8] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 21:02:28 [http-nio-8082-exec-8] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 21:02:28 [http-nio-8082-exec-8] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 21:02:28 [http-nio-8082-exec-8] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 21:09:59 [http-nio-8082-exec-10] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 21:09:59 [http-nio-8082-exec-10] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 21:09:59 [http-nio-8082-exec-10] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 21:09:59 [http-nio-8082-exec-10] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 21:12:43 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 21:12:43 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 21:12:43 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 21:12:43 [http-nio-8082-exec-1] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 21:15:51 [http-nio-8082-exec-7] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 21:15:51 [http-nio-8082-exec-7] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 21:15:51 [http-nio-8082-exec-7] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 21:15:51 [http-nio-8082-exec-7] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 21:16:45 [http-nio-8082-exec-9] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 21:16:45 [http-nio-8082-exec-9] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 21:16:45 [http-nio-8082-exec-9] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 21:16:45 [http-nio-8082-exec-9] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 21:19:21 [http-nio-8082-exec-4] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 21:19:21 [http-nio-8082-exec-4] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 21:19:21 [http-nio-8082-exec-4] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 21:19:21 [http-nio-8082-exec-4] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-13 21:20:45 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-13 21:20:45 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-13 21:20:45 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note content: Le patient déclare qu'il 'se sent très bien' Poids égal ou inférieur au poids recommandé
+2025-07-13 21:20:45 [http-nio-8082-exec-2] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-14 09:33:48 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Starting NotesServiceApplication using Java 21.0.5 with PID 9700 (C:\Workspace\OC_P9_Medilabo\notesService\target\classes started by Cy in C:\Workspace\OC_P9_Medilabo)
+2025-07-14 09:33:48 [main] DEBUG com.openclassrooms.medilabo.notesService.NotesServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-14 09:33:48 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-14 09:33:55 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Started NotesServiceApplication in 8.328 seconds (process running for 10.361)
+2025-07-14 09:34:23 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-14 09:34:23 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-14 09:34:23 [http-nio-8082-exec-1] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-14 09:39:17 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-14 09:39:17 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-14 09:39:17 [http-nio-8082-exec-3] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-14 10:09:48 [http-nio-8082-exec-5] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-14 10:09:48 [http-nio-8082-exec-5] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-14 10:09:48 [http-nio-8082-exec-5] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-14 10:21:36 [http-nio-8082-exec-7] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-14 10:21:36 [http-nio-8082-exec-7] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-14 10:21:36 [http-nio-8082-exec-7] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-14 10:27:16 [http-nio-8082-exec-9] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-14 10:27:16 [http-nio-8082-exec-9] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-14 10:27:16 [http-nio-8082-exec-9] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-14 10:31:05 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-14 10:31:05 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-14 10:31:05 [http-nio-8082-exec-1] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-14 10:33:56 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-14 10:33:56 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-14 10:33:56 [http-nio-8082-exec-3] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-14 10:39:04 [http-nio-8082-exec-5] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-14 10:39:04 [http-nio-8082-exec-5] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-14 10:39:04 [http-nio-8082-exec-5] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-14 10:49:38 [http-nio-8082-exec-7] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-14 10:49:38 [http-nio-8082-exec-7] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-14 10:49:38 [http-nio-8082-exec-7] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-14 10:59:39 [http-nio-8082-exec-9] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-14 10:59:39 [http-nio-8082-exec-9] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-14 10:59:39 [http-nio-8082-exec-9] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-14 11:05:28 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-14 11:05:28 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-14 11:05:28 [http-nio-8082-exec-1] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-14 11:06:05 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-14 11:06:05 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-14 11:06:05 [http-nio-8082-exec-2] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-14 11:07:11 [http-nio-8082-exec-4] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-14 11:07:11 [http-nio-8082-exec-4] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-14 11:07:12 [http-nio-8082-exec-4] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-14 11:24:38 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Starting NotesServiceApplication using Java 21.0.5 with PID 1712 (C:\Workspace\OC_P9_Medilabo\notesService\target\classes started by Cy in C:\Workspace\OC_P9_Medilabo)
+2025-07-14 11:24:38 [main] DEBUG com.openclassrooms.medilabo.notesService.NotesServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-14 11:24:38 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-14 11:24:42 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Started NotesServiceApplication in 4.382 seconds (process running for 5.191)
+2025-07-14 11:26:04 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-14 11:26:04 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-14 11:26:04 [http-nio-8082-exec-1] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-14 11:30:03 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-14 11:30:03 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-14 11:30:03 [http-nio-8082-exec-2] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-14 11:31:08 [http-nio-8082-exec-6] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-14 11:31:08 [http-nio-8082-exec-6] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-14 11:31:08 [http-nio-8082-exec-6] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-14 11:32:21 [http-nio-8082-exec-7] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-14 11:32:21 [http-nio-8082-exec-7] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-14 11:32:21 [http-nio-8082-exec-7] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-14 11:35:30 [http-nio-8082-exec-9] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-14 11:35:30 [http-nio-8082-exec-9] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-14 11:35:30 [http-nio-8082-exec-9] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-14 11:37:49 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-14 11:37:49 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-14 11:37:49 [http-nio-8082-exec-1] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-14 11:37:52 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-14 11:37:52 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-14 11:37:52 [http-nio-8082-exec-3] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-14 11:53:38 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Starting NotesServiceApplication using Java 21.0.5 with PID 13284 (C:\Workspace\OC_P9_Medilabo\notesService\target\classes started by Cy in C:\Workspace\OC_P9_Medilabo)
+2025-07-14 11:53:38 [main] DEBUG com.openclassrooms.medilabo.notesService.NotesServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-14 11:53:38 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-14 11:53:44 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Started NotesServiceApplication in 6.796 seconds (process running for 8.463)
+2025-07-14 11:54:17 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-14 11:54:17 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-14 11:54:18 [http-nio-8082-exec-1] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-14 11:54:19 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-14 11:54:19 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-14 11:54:19 [http-nio-8082-exec-2] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-14 11:54:29 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to add note to patient with ID 1
+2025-07-14 11:54:29 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Attempting to add new note to patient ID 1
+2025-07-14 11:54:29 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note added successfully for patient ID 1
+2025-07-14 11:54:32 [http-nio-8082-exec-4] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-14 11:54:32 [http-nio-8082-exec-4] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-14 11:54:32 [http-nio-8082-exec-4] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 2 notes for patient ID 1
+2025-07-14 11:55:01 [http-nio-8082-exec-5] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-14 11:55:01 [http-nio-8082-exec-5] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-14 11:55:01 [http-nio-8082-exec-5] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 2 notes for patient ID 1
+2025-07-14 11:55:04 [http-nio-8082-exec-6] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-14 11:55:04 [http-nio-8082-exec-6] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-14 11:55:04 [http-nio-8082-exec-6] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 2 notes for patient ID 1
+2025-07-14 11:55:05 [http-nio-8082-exec-7] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-14 11:55:05 [http-nio-8082-exec-7] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-14 11:55:05 [http-nio-8082-exec-7] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 2 notes for patient ID 1
+2025-07-14 11:55:06 [http-nio-8082-exec-8] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-14 11:55:06 [http-nio-8082-exec-8] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-14 11:55:06 [http-nio-8082-exec-8] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 2 notes for patient ID 1
+2025-07-14 11:56:11 [http-nio-8082-exec-10] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to add note to patient with ID 1
+2025-07-14 11:56:11 [http-nio-8082-exec-10] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Attempting to add new note to patient ID 1
+2025-07-14 11:56:11 [http-nio-8082-exec-10] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note added successfully for patient ID 1
+2025-07-14 11:57:34 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to add note to patient with ID 1
+2025-07-14 11:57:34 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Attempting to add new note to patient ID 1
+2025-07-14 11:57:34 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Note added successfully for patient ID 1
+2025-07-15 14:20:27 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Starting NotesServiceApplication v0.0.1-SNAPSHOT using Java 21.0.7 with PID 1 (/app/notesService.jar started by root in /app)
+2025-07-15 14:20:27 [main] DEBUG com.openclassrooms.medilabo.notesService.NotesServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-15 14:20:27 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-15 14:20:59 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Started NotesServiceApplication in 36.084 seconds (process running for 39.155)
+2025-07-15 14:21:31 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-15 14:21:31 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-15 14:21:32 [http-nio-8082-exec-1] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-15 14:21:34 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-15 14:21:34 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-15 14:21:34 [http-nio-8082-exec-2] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-15 17:42:43 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Starting NotesServiceApplication v0.0.1-SNAPSHOT using Java 21.0.7 with PID 1 (/app/notesService.jar started by root in /app)
+2025-07-15 17:42:43 [main] DEBUG com.openclassrooms.medilabo.notesService.NotesServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-15 17:42:43 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-15 17:43:23 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Started NotesServiceApplication in 42.626 seconds (process running for 46.893)
+2025-07-15 17:44:47 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-15 17:44:47 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-15 17:44:48 [http-nio-8082-exec-1] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-15 17:44:50 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-15 17:44:50 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-15 17:44:50 [http-nio-8082-exec-2] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-16 16:54:23 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Starting NotesServiceApplication using Java 21.0.5 with PID 10284 (C:\Workspace\Medilabo\notesService\target\classes started by Cy in C:\Workspace\Medilabo)
+2025-07-16 16:54:23 [main] DEBUG com.openclassrooms.medilabo.notesService.NotesServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-16 16:54:23 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-16 16:54:30 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Started NotesServiceApplication in 8.657 seconds (process running for 9.971)
+2025-07-16 16:54:38 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Starting NotesServiceApplication using Java 21.0.5 with PID 19312 (C:\Workspace\Medilabo\notesService\target\classes started by Cy in C:\Workspace\Medilabo)
+2025-07-16 16:54:38 [main] DEBUG com.openclassrooms.medilabo.notesService.NotesServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-16 16:54:38 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-16 16:54:46 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Started NotesServiceApplication in 8.886 seconds (process running for 9.76)
+2025-07-16 16:58:07 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Starting NotesServiceApplication using Java 21.0.5 with PID 6456 (C:\Workspace\Medilabo\notesService\target\classes started by Cy in C:\Workspace\Medilabo)
+2025-07-16 16:58:07 [main] DEBUG com.openclassrooms.medilabo.notesService.NotesServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-16 16:58:07 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-16 16:58:12 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Started NotesServiceApplication in 5.245 seconds (process running for 5.933)
+2025-07-16 17:00:27 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Starting NotesServiceApplication using Java 21.0.5 with PID 11676 (C:\Workspace\Medilabo\notesService\target\classes started by Cy in C:\Workspace\Medilabo)
+2025-07-16 17:00:27 [main] DEBUG com.openclassrooms.medilabo.notesService.NotesServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-16 17:00:27 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-16 17:00:32 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Started NotesServiceApplication in 5.136 seconds (process running for 5.879)
+2025-07-16 17:01:41 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-16 17:01:41 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-16 17:01:41 [http-nio-8082-exec-3] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-16 17:03:57 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Starting NotesServiceApplication using Java 21.0.5 with PID 400 (C:\Workspace\Medilabo\notesService\target\classes started by Cy in C:\Workspace\Medilabo)
+2025-07-16 17:03:57 [main] DEBUG com.openclassrooms.medilabo.notesService.NotesServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-16 17:03:57 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-16 17:04:02 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Started NotesServiceApplication in 5.525 seconds (process running for 6.397)
+2025-07-16 17:24:50 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 3
+2025-07-16 17:24:50 [http-nio-8082-exec-2] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 3
+2025-07-16 17:24:50 [http-nio-8082-exec-2] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 2 notes for patient ID 3
+2025-07-16 17:25:04 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-16 17:25:04 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-16 17:25:04 [http-nio-8082-exec-1] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-16 17:25:50 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-16 17:25:50 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
+2025-07-16 17:25:50 [http-nio-8082-exec-3] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-16 17:38:17 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Starting NotesServiceApplication using Java 21.0.5 with PID 5528 (C:\Workspace\Medilabo\notesService\target\classes started by Cy in C:\Workspace\Medilabo)
+2025-07-16 17:38:17 [main] DEBUG com.openclassrooms.medilabo.notesService.NotesServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-16 17:38:17 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-16 17:38:25 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Started NotesServiceApplication in 9.349 seconds (process running for 11.059)
+2025-07-16 17:41:45 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-16 17:41:45 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
