@@ -8,8 +8,9 @@ Medilabo est une application web composée de microservices permettant la gestio
 - [Description des microservices](#-description-des-microservices)
 - [Architecture du projet](#-architecture-du-projet)
 - [Authentification via Basic Auth](#-authentification-via-basic-auth)
-- [Lancement de l'application](#-lancement-de-lapplication-avec-docker-compose)
+- [Lancement de l'application avec Docker](#-lancement-de-lapplication-avec-docker-compose)
 - [Endpoints des microservices](#-endpoints-des-microservices)
+- [Tests](#-tests)
 - [Suggestions d’améliorations (Greencode)](#-suggestions-daméliorations--greencode)
 
 ## 🛠 Technologies utilisées
@@ -127,6 +128,21 @@ Les bases de données MySQL (pour les patients) et MongoDB (pour les notes) sont
 | GET     | /diabetes-report/patient/{id} | Rapport de risque pour un patient      |
 
 
+## 🧪 Tests
+
+Ce projet inclut des tests pour garantir la qualité et le bon fonctionnement des différents microservices.
+
+### Tests unitaires et d'intégration back-end
+
+- Chaque microservice back-end dispose de tests unitaires et/ou d'intégration visant à vérifier la logique métier et la cohérence avec les composants associés (base de données, services externes...).
+- Ces tests peuvent être lancés localement depuis l’IDE ou en ligne de commande.
+
+### Tests d’intégration de la Gateway
+
+- Pour valider le routage et la communication globale entre la Gateway et les microservices, des tests d’intégration spécifiques à la Gateway sont disponibles.
+- Ces tests nécessitent que **tous les microservices soient lancés localement** simultanément.
+- Il est également nécessaire de modifier le fichier de configuration application.yml et de remplacer dans les URI le nom du service par localhostdans afin que la Gateway pointe vers les services sur `localhost` aux bons ports.
+- Une fois la configuration et les services en place, ces tests peuvent être lancés depuis l’IDE ou la ligne de commande, et permettent de vérifier la bonne orchestration du système.
 
 ## 🌱 Suggestions d’améliorations – GreenCode
 

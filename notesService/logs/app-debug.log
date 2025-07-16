@@ -401,3 +401,9 @@
 2025-07-16 17:25:50 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
 2025-07-16 17:25:50 [http-nio-8082-exec-3] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1
 2025-07-16 17:25:50 [http-nio-8082-exec-3] DEBUG com.openclassrooms.medilabo.notesService.controller.NoteController - Returning 1 notes for patient ID 1
+2025-07-16 17:38:17 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Starting NotesServiceApplication using Java 21.0.5 with PID 5528 (C:\Workspace\Medilabo\notesService\target\classes started by Cy in C:\Workspace\Medilabo)
+2025-07-16 17:38:17 [main] DEBUG com.openclassrooms.medilabo.notesService.NotesServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-16 17:38:17 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-16 17:38:25 [main] INFO  com.openclassrooms.medilabo.notesService.NotesServiceApplication - Started NotesServiceApplication in 9.349 seconds (process running for 11.059)
+2025-07-16 17:41:45 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.controller.NoteController - Received request to get all notes for patient with ID 1
+2025-07-16 17:41:45 [http-nio-8082-exec-1] INFO  com.openclassrooms.medilabo.notesService.service.NoteService - Fetching notes for patient ID 1

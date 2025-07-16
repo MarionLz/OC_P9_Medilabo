@@ -43,3 +43,10 @@
 2025-07-16 17:25:50 [http-nio-8083-exec-9] DEBUG com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Generated diabetes report: NONE
 2025-07-16 17:26:30 [http-nio-8083-exec-2] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Received request to get diabetes report
 2025-07-16 17:26:30 [http-nio-8083-exec-2] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Generating diabetes risk report for patient ID 1
+2025-07-16 17:38:08 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.DiabetesReportServiceApplication - Starting DiabetesReportServiceApplication using Java 21.0.5 with PID 16836 (C:\Workspace\Medilabo\diabetesReportService\target\classes started by Cy in C:\Workspace\Medilabo)
+2025-07-16 17:38:08 [main] DEBUG com.openclassrooms.medilabo.diabetesReportService.DiabetesReportServiceApplication - Running with Spring Boot v3.4.7, Spring v6.2.8
+2025-07-16 17:38:08 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.DiabetesReportServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-16 17:38:12 [main] INFO  com.openclassrooms.medilabo.diabetesReportService.DiabetesReportServiceApplication - Started DiabetesReportServiceApplication in 4.455 seconds (process running for 5.263)
+2025-07-16 17:41:42 [http-nio-8083-exec-4] INFO  com.openclassrooms.medilabo.diabetesReportService.controller.DiabetesReportController - Received request to get diabetes report
+2025-07-16 17:41:42 [http-nio-8083-exec-4] INFO  com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Generating diabetes risk report for patient ID 1
+2025-07-16 17:41:44 [http-nio-8083-exec-4] DEBUG com.openclassrooms.medilabo.diabetesReportService.service.DiabetesReportService - Retrieved patient demographics: gender=F, dateOfBirth=1966-12-31
