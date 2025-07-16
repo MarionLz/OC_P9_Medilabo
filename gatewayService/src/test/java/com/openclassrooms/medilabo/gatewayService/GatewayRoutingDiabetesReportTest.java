@@ -8,6 +8,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.boot.test.autoconfigure.web.reactive.AutoConfigureWebTestClient;
 
+/**
+ * Integration test for routing requests to the Diabetes Report Service
+ * through the Spring Cloud Gateway.
+ */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @AutoConfigureWebTestClient
 @TestPropertySource(properties = {
@@ -21,6 +25,10 @@ public class GatewayRoutingDiabetesReportTest {
     @Autowired
     private WebTestClient webTestClient;
 
+    /**
+     * Verifies that a GET request to /api/diabetes-report/patient/1
+     * is correctly forwarded to the Diabetes Report Service and returns HTTP 200 OK.
+     */
     @Test
     void shouldForwardRequestToDiabetesReportService() {
         webTestClient.get()
